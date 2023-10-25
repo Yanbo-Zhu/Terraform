@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_总览/学习资料.md",
+                "file": "01_总览/安装Terraform.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01_总览/学习资料.md",
+                "file": "01_总览/安装Terraform.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01_总览/学习资料.md",
+                "file": "01_总览/安装Terraform.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01_总览/学习资料.md"
+                "file": "01_总览/安装Terraform.md"
               }
             }
           },
@@ -168,8 +168,10 @@
   },
   "active": "f4596ce4fd6e6935",
   "lastOpenFiles": [
-    "01_总览/简介.md",
+    "01_总览/image/Pasted image 20231025140642.png",
     "01_总览/学习资料.md",
+    "01_总览/安装Terraform.md",
+    "01_总览/简介.md",
     "未命名",
     "01_总览/image/Pasted image 20231024235247.png",
     "01_总览/image/Pasted image 20231024235121.png",
@@ -206,8 +208,6 @@
     "2023-10-03/Modul_9_Container/Modul_9_1_Container.md",
     "2023-10-03/Modul_8_Automation/Modul_8_Automation.md",
     "2023-10-03/Modul_6_database_services/Modul_6_1_Database_Services.md",
-    "2023-10-02/Modul_1_Architecting_Fundamentals/Moud_1_3_Review.md",
-    "2023-10-03/Modul_5_Storage/Modul_5_1_Storage.md",
     "2023-10-04/lab7_Capstone_Build_an_AWS_multi-tier_Architecture/image",
     "2023-10-04/lab7_Capstone_Build_an_AWS_multi-tier_Architecture",
     "2023-10-04/Modul_14_CourseSummary/image",
