@@ -8,31 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "11efbf41b7ebfeb3",
+            "id": "11a842aaf8c9a0aa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_Terraform代码的书写/02_04_输出值.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ee825dd192c499b4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02_Terraform代码的书写/02_06_资源.md",
+                "file": "04_Terraform命令行/04_13_output_提取状态文件中输出值的值.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "lab",
+                "query": "状态锁",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 328.5
+    "width": 220.50260543823242
   },
   "right": {
     "id": "75bad08b258c7b53",
@@ -106,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02_Terraform代码的书写/02_06_资源.md",
+                "file": "04_Terraform命令行/04_13_output_提取状态文件中输出值的值.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02_Terraform代码的书写/02_06_资源.md",
+                "file": "04_Terraform命令行/04_13_output_提取状态文件中输出值的值.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02_Terraform代码的书写/02_06_资源.md"
+                "file": "04_Terraform命令行/04_13_output_提取状态文件中输出值的值.md"
               }
             }
           },
@@ -179,22 +166,38 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "ee825dd192c499b4",
+  "active": "11a842aaf8c9a0aa",
   "lastOpenFiles": [
-    "02_Terraform代码的书写/02_05_局部值.md",
-    "02_Terraform代码的书写/02_06_资源.md",
-    "02_Terraform代码的书写/image",
-    "02_Terraform代码的书写/02_04_输出值.md",
-    "02_Terraform代码的书写/02_01_类型.md",
-    "02_Terraform代码的书写/02_00_总览.md",
-    "02_Terraform代码的书写/02_03_输入变量.md",
-    "02_Terraform代码的书写/02_02_配置语法.md",
-    "00_总览/学习资料.md",
-    "00_总览/简介.md",
+    "04_Terraform命令行/04_12_init.md",
+    "04_Terraform命令行/04_13_output_提取状态文件中输出值的值.md",
+    "04_Terraform命令行/04_11_impot_导入存在的资源对象.md",
+    "04_Terraform命令行/04_10_graph.md",
+    "04_Terraform命令行/04_09_get_下载模块.md",
+    "04_Terraform命令行/04_08_force-unlock.md",
     "01_Terraform基础概念/01_02_状态管理.md",
+    "04_Terraform命令行/04_07_fmt_格式化代码.md",
+    "04_Terraform命令行/04_06_destory.md",
+    "04_Terraform命令行/04_05_console.md",
+    "04_Terraform命令行/04_04_apply.md",
+    "04_Terraform命令行/04_03_资源地址.md",
+    "04_Terraform命令行/04_02_环境变量.md",
+    "04_Terraform命令行/04_01_命令行配置文件(.terraformrc或terraform.rc).md",
+    "04_Terraform命令行/04_00_总览.md",
+    "03_Terraform模块/03_05_设计新模块的模式.md",
+    "04_Terraform命令行",
+    "03_Terraform模块/03_04_重构.md",
+    "03_Terraform模块/03_03_模块元参数.md",
+    "03_Terraform模块/03_02_引用模块.md",
+    "03_Terraform模块/03_01_创建模块.md",
+    "03_Terraform模块/03_00_总览.md",
+    "02_Terraform代码的书写/02_11_Checks.md",
+    "02_Terraform代码的书写/02_10_代码风格范式.md",
+    "02_Terraform代码的书写/02_09_重载文件.md",
+    "03_Terraform模块",
+    "02_Terraform代码的书写/02_08_表达式.md",
+    "02_Terraform代码的书写/02_07_数据源.md",
+    "02_Terraform代码的书写/image",
     "02_Terraform代码的书写",
-    "01_Terraform基础概念/01_01_Provider.md",
-    "00_总览/安装Terraform.md",
     "00_总览/image/Pasted image 20231025140642.png",
     "01_Terraform基础概念",
     "00_总览/image/Pasted image 20231024235247.png",
@@ -208,24 +211,8 @@
     "00_总览/image/Pasted image 20231024234047.png",
     "00_总览/image",
     "00_总览",
-    "2023-10-03/Modul_7_Monitoring_LoadBalancing_Scaling/Modul_7_1_Monitoring.md",
-    "2023-10-03/Modul_7_Monitoring_LoadBalancing_Scaling/Modul_7_2_Load Balancing.md",
-    "2023-10-03/Modul_7_Monitoring_LoadBalancing_Scaling/Modul_7_3_AutoScaling.md",
-    "2023-10-04/lab7_Capstone_Build_an_AWS_multi-tier_Architecture/Lab7_CapstoneLab_Build_an_AWS_multi-tier_Architecture.md",
-    "2023-10-04/Modul_12_EdgeServices/Lab_6_Configure_an_Amazon_CloudFront_distribution_with_an_Amazon_S3_origin.md",
-    "2023-10-03/Modul_6_database_services/Lab_3_Create_A_database_layer_in_Amazon_VPC_infrastructure.md",
-    "2023-10-04/Modul_11_Serverless/Lab_5_Build_A_Serverless_Architecture.md",
-    "2023-10-03/Modul_7_Monitoring_LoadBalancing_Scaling/Lab_4_Configure_high_availability_in_your_Amazon_VPC.md",
-    "2023-10-02/Modul_4_Compute/Lab_2_Build your Amazon VPC infrastructure.md",
-    "2023-10-02/Modul_4_Compute/Modul_4_1_Compute.md",
-    "2023-10-04/Modul_12_EdgeServices/Modul_12_1.md",
-    "2023-10-02/Modul_1_Architecting_Fundamentals/Lab_1_Explore and interact with the AWS Management Console and AWS Command Line Interface.md",
-    "2023-10-02/0_课程大纲/1_课程大纲.md",
-    "2023-10-02/0_课程大纲/Lab_总览.md",
     "2023-10-04/Modul_12_EdgeServices/未命名",
     "2023-10-04/lab7_Capstone_Build_an_AWS_multi-tier_Architecture/image",
-    "2023-10-04/lab7_Capstone_Build_an_AWS_multi-tier_Architecture",
-    "2023-10-04/Modul_14_CourseSummary/image",
-    "2023-10-04/Modul_13_BackupAndRecovery/image"
+    "2023-10-04/lab7_Capstone_Build_an_AWS_multi-tier_Architecture"
   ]
 }
