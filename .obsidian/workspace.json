@@ -8,12 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "11a842aaf8c9a0aa",
+            "id": "11efbf41b7ebfeb3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04_Terraform命令行/04_13_output_提取状态文件中输出值的值.md",
+                "file": "02_Terraform代码的书写/02_04_输出值.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ee825dd192c499b4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04_Terraform命令行/04_19_taint_标记某个Terraform管理的资源有污点.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "状态锁",
+                "query": "backend",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 220.50260543823242
+    "width": 328.5
   },
   "right": {
     "id": "75bad08b258c7b53",
@@ -93,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04_Terraform命令行/04_13_output_提取状态文件中输出值的值.md",
+                "file": "02_Terraform代码的书写/02_04_输出值.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "04_Terraform命令行/04_13_output_提取状态文件中输出值的值.md",
+                "file": "02_Terraform代码的书写/02_04_输出值.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04_Terraform命令行/04_13_output_提取状态文件中输出值的值.md"
+                "file": "02_Terraform代码的书写/02_04_输出值.md"
               }
             }
           },
@@ -166,15 +178,24 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "11a842aaf8c9a0aa",
+  "active": "11efbf41b7ebfeb3",
   "lastOpenFiles": [
-    "04_Terraform命令行/04_12_init.md",
+    "04_Terraform命令行/04_19_taint_标记某个Terraform管理的资源有污点.md",
+    "04_Terraform命令行/04_18_state_执行修改状态.md",
+    "04_Terraform命令行/04_17_show_状态文件或是变更计划文件中打印可读的输出信息.md",
+    "04_Terraform命令行/04_16_refresh.md",
+    "04_Terraform命令行/04_15_providers.md",
+    "01_Terraform基础概念/01_02_状态管理.md",
+    "04_Terraform命令行/04_00_总览.md",
+    "04_Terraform命令行/04_14_plan_创建变更计划.md",
+    "04_Terraform命令行/image",
     "04_Terraform命令行/04_13_output_提取状态文件中输出值的值.md",
+    "02_Terraform代码的书写/02_06_资源.md",
+    "04_Terraform命令行/04_12_init.md",
     "04_Terraform命令行/04_11_impot_导入存在的资源对象.md",
     "04_Terraform命令行/04_10_graph.md",
     "04_Terraform命令行/04_09_get_下载模块.md",
     "04_Terraform命令行/04_08_force-unlock.md",
-    "01_Terraform基础概念/01_02_状态管理.md",
     "04_Terraform命令行/04_07_fmt_格式化代码.md",
     "04_Terraform命令行/04_06_destory.md",
     "04_Terraform命令行/04_05_console.md",
@@ -182,20 +203,12 @@
     "04_Terraform命令行/04_03_资源地址.md",
     "04_Terraform命令行/04_02_环境变量.md",
     "04_Terraform命令行/04_01_命令行配置文件(.terraformrc或terraform.rc).md",
-    "04_Terraform命令行/04_00_总览.md",
-    "03_Terraform模块/03_05_设计新模块的模式.md",
     "04_Terraform命令行",
+    "03_Terraform模块/03_05_设计新模块的模式.md",
     "03_Terraform模块/03_04_重构.md",
     "03_Terraform模块/03_03_模块元参数.md",
     "03_Terraform模块/03_02_引用模块.md",
-    "03_Terraform模块/03_01_创建模块.md",
-    "03_Terraform模块/03_00_总览.md",
-    "02_Terraform代码的书写/02_11_Checks.md",
-    "02_Terraform代码的书写/02_10_代码风格范式.md",
-    "02_Terraform代码的书写/02_09_重载文件.md",
     "03_Terraform模块",
-    "02_Terraform代码的书写/02_08_表达式.md",
-    "02_Terraform代码的书写/02_07_数据源.md",
     "02_Terraform代码的书写/image",
     "02_Terraform代码的书写",
     "00_总览/image/Pasted image 20231025140642.png",
@@ -212,7 +225,6 @@
     "00_总览/image",
     "00_总览",
     "2023-10-04/Modul_12_EdgeServices/未命名",
-    "2023-10-04/lab7_Capstone_Build_an_AWS_multi-tier_Architecture/image",
-    "2023-10-04/lab7_Capstone_Build_an_AWS_multi-tier_Architecture"
+    "2023-10-04/lab7_Capstone_Build_an_AWS_multi-tier_Architecture/image"
   ]
 }
