@@ -16,10 +16,10 @@ ADDRESS参数是要标记污点的资源地址。
 
 - -allow-missing：如果声明该参数，那么即使资源不存在，命令也会返回成功(状态码0)
 - -backup=path：写入备份文件的路径，默认为-state-out路径加上".backup"后缀。可以通过设置为"-"关闭备份
-- -lock=true：与apply类似，不再赘述
-- -lock-timeout=0s：与apply类似，不再赘述
-- -state=path：要读写的状态文件路径。默认为"terraform.tfstate"。如果启用了远程Backend则该参数设置无效
-- -state-out=path：更新后的状态文件写入的路径。默认等于-state路径。如果启用了远程Backend则该参数设置无效
+- -lock=true：与apply类似，不再赘述 
+- -lock-timeout=0s：与apply类似，不再赘述 
+- -state=path：要读写的状态文件路径。默认为"terraform.tfstate"。如果启用了远程Backend  则该参数设置无效
+- -state-out=path：更新后的状态文件写入的路径。默认等于-state路径。如果启用了远程Backend  则该参数设置无效
 
 ## 1.2 标记单个资源
 

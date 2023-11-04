@@ -4,31 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "f80ee5cabcde51b1",
+        "id": "f2cfed700b3e9e79",
         "type": "tabs",
         "children": [
           {
-            "id": "11efbf41b7ebfeb3",
+            "id": "cd884ce81c8e96c0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02_Terraform代码的书写/02_04_输出值.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ee825dd192c499b4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04_Terraform命令行/04_19_taint_标记某个Terraform管理的资源有污点.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -105,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02_Terraform代码的书写/02_04_输出值.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +105,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02_Terraform代码的书写/02_04_输出值.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,9 +126,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "02_Terraform代码的书写/02_04_输出值.md"
-              }
+              "state": {}
             }
           },
           {
@@ -164,7 +144,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 274.5
+    "width": 367.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -178,9 +158,27 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "11efbf41b7ebfeb3",
+  "active": "cd884ce81c8e96c0",
   "lastOpenFiles": [
+    "04_Terraform命令行/04_22_workspace.md",
+    "实践/CloudPosse 的 Terraform 最佳实践.md",
+    "05_技巧/05_09_利用 create_before_destroy 调整资源 Update 的执行顺序.md",
+    "实践",
+    "05_技巧/05_08_创建资源的条件依赖另一个资源的输出时怎么办.md",
+    "05_技巧/05_07_利用 null_resource 搭配 replace_triggered_by 更新无法从服务端读取内容的属性.md",
+    "05_技巧/05_06_利用 null_resource 的 triggers 触发其他资源更新.md",
+    "05_技巧/05_05_destroy-provisioner中使用变量.md",
+    "05_技巧/05_04_provisioner与user_data.md",
+    "05_技巧/05_03_多可用区分布.md",
+    "05_技巧/05_02_依赖反转.md",
+    "02_Terraform代码的书写/02_07_数据源.md",
+    "05_技巧/05_01_有条件创造.md",
+    "05_技巧/05_00_总览.md",
+    "05_技巧",
+    "04_Terraform命令行/04_21_untaint_清楚污点.md",
+    "04_Terraform命令行/04_20_validate_检查语法文件.md",
     "04_Terraform命令行/04_19_taint_标记某个Terraform管理的资源有污点.md",
+    "02_Terraform代码的书写/02_04_输出值.md",
     "04_Terraform命令行/04_18_state_执行修改状态.md",
     "04_Terraform命令行/04_17_show_状态文件或是变更计划文件中打印可读的输出信息.md",
     "04_Terraform命令行/04_16_refresh.md",
@@ -191,23 +189,7 @@
     "04_Terraform命令行/image",
     "04_Terraform命令行/04_13_output_提取状态文件中输出值的值.md",
     "02_Terraform代码的书写/02_06_资源.md",
-    "04_Terraform命令行/04_12_init.md",
-    "04_Terraform命令行/04_11_impot_导入存在的资源对象.md",
-    "04_Terraform命令行/04_10_graph.md",
-    "04_Terraform命令行/04_09_get_下载模块.md",
-    "04_Terraform命令行/04_08_force-unlock.md",
-    "04_Terraform命令行/04_07_fmt_格式化代码.md",
-    "04_Terraform命令行/04_06_destory.md",
-    "04_Terraform命令行/04_05_console.md",
-    "04_Terraform命令行/04_04_apply.md",
-    "04_Terraform命令行/04_03_资源地址.md",
-    "04_Terraform命令行/04_02_环境变量.md",
-    "04_Terraform命令行/04_01_命令行配置文件(.terraformrc或terraform.rc).md",
     "04_Terraform命令行",
-    "03_Terraform模块/03_05_设计新模块的模式.md",
-    "03_Terraform模块/03_04_重构.md",
-    "03_Terraform模块/03_03_模块元参数.md",
-    "03_Terraform模块/03_02_引用模块.md",
     "03_Terraform模块",
     "02_Terraform代码的书写/image",
     "02_Terraform代码的书写",
@@ -223,8 +205,6 @@
     "00_总览/image/Pasted image 20231024234247.png",
     "00_总览/image/Pasted image 20231024234047.png",
     "00_总览/image",
-    "00_总览",
-    "2023-10-04/Modul_12_EdgeServices/未命名",
-    "2023-10-04/lab7_Capstone_Build_an_AWS_multi-tier_Architecture/image"
+    "00_总览"
   ]
 }
