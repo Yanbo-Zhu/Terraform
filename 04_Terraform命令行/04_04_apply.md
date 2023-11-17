@@ -27,5 +27,6 @@ terraform apply [options] [dir-or-plan]
 - -state-out=path：写入更新的状态文件的路径，默认情况使用-state的值。该参数在使用远程Backend时设置无效
 - -target=resource：通过指定资源地址指定更新目标资源。我们会在随后介绍plan命令时详细介绍
 - -var 'foo=bar'：设置一组输入变量的值。该参数可以反复设置以传入多个输入变量值
+    - terraform apply -var "instance_name=YetAnotherName"
 - -var-file=foo：指定一个输入变量文件。具体内容我们在介绍输入变量的章节已有介绍，在此不再赘述
 

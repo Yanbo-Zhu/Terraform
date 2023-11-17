@@ -1,9 +1,13 @@
 
-# 1 graph
+# 1 先下载Graphviz 
+
+![](image/Pasted%20image%2020231117225921.png)
+
+# 2 graph
 
 terraform graph命令可以用来生成代码描述的基础设施或是执行计划的可视化图形。它的输出是DOT格式，可以使用[GraphViz](http://www.graphviz.org/)来生成图片，也有许多网络服务可以读取这种格式。
 
-## 1.1 用法
+## 2.1 用法
 
 terraform graph [options] [DIR]
 
@@ -15,7 +19,7 @@ terraform graph [options] [DIR]
 - -draw-cycles：用彩色的边高亮图中的环，这可以帮助我们分析代码中的环错误(Terraform禁止环状依赖)
 - -type=plan：生成图表的类型。可以是：plan、plan-destroy、apply、validate、input、refresh
 
-## 1.2 创建图片文件
+## 2.2 创建图片文件
 
 terraform graph命令输出的是DOT格式的数据，可以轻松地使用GraphViz转换为图形文件：
 
@@ -29,7 +33,7 @@ $ terraform graph | dot -Tsvg > graph.svg
 
 图 1.6.10/1 - 生成的依赖图
 
-## 1.3 如何安装GraphViz
+## 2.3 如何安装GraphViz
 
 安装GraphViz也很简单，对于Ubuntu：
 
@@ -54,4 +58,12 @@ $ sudo yum install graphviz
 ```
 $ brew install graphviz
 ```
+
+
+# 3 例子
+
+![](image/Pasted%20image%2020231117230003.png)
+
+
+![](image/Pasted%20image%2020231117230016.png)
 

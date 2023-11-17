@@ -91,6 +91,9 @@ registry.terraform.io不但可以查询Provider，也可以用来发布Provider�
 
 # 3 Provider的声明
 
+The `provider` block configures the specified provider, in this case `aws`. A provider is a plugin that Terraform uses to create and manage your resources.
+
+You can use multiple provider blocks in your Terraform configuration to manage resources from different providers. You can even use different providers together. For example, you could pass the IP address of your AWS EC2 instance to a monitoring resource from DataDog.
 
 一组Terraform代码要被执行，相关的Provider必须在代码中被声明。不少的Provider在声明时需要传入一些关键信息才能被使用，例如我们在第一章的例子中，必须给出访问密钥以及期望执行的UCloud区域（Region）信息。
 
