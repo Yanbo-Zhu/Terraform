@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_Terraform代码的书写/02_06_资源.md",
+                "file": "03_Terraform模块/03_00_总览.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,8 +86,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -107,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02_Terraform代码的书写/02_06_资源.md",
+                "file": "03_Terraform模块/03_00_总览.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02_Terraform代码的书写/02_06_资源.md",
+                "file": "03_Terraform模块/03_00_总览.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02_Terraform代码的书写/02_06_资源.md"
+                "file": "03_Terraform模块/03_00_总览.md"
               }
             }
           },
@@ -166,7 +165,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 367.5
+    "width": 287.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -182,13 +181,26 @@
   },
   "active": "a13acdfad48b7067",
   "lastOpenFiles": [
-    "02_Terraform代码的书写/image/Pasted image 20231117231343.png",
-    "02_Terraform代码的书写/image/Pasted image 20231117231331.png",
-    "02_Terraform代码的书写/image/Pasted image 20231117231015.png",
-    "02_Terraform代码的书写/02_08_表达式.md",
+    "03_Terraform模块/image/Pasted image 20231118143702.png",
+    "03_Terraform模块/03_06_例子.md",
+    "03_Terraform模块/image/Pasted image 20231118143320.png",
+    "03_Terraform模块/image/Pasted image 20231118143246.png",
+    "03_Terraform模块/image/Pasted image 20231118143147.png",
+    "03_Terraform模块/image/Pasted image 20231118143110.png",
+    "03_Terraform模块/image/Pasted image 20231118143057.png",
+    "03_Terraform模块/image/Pasted image 20231118143037.png",
+    "03_Terraform模块/image/Pasted image 20231118143024.png",
+    "03_Terraform模块/image/Pasted image 20231118142951.png",
+    "03_Terraform模块/image/Pasted image 20231118142918.png",
+    "03_Terraform模块/image/Pasted image 20231118142834.png",
+    "03_Terraform模块/image",
+    "03_Terraform模块/03_02_引用模块.md",
+    "03_Terraform模块/03_01_创建模块.md",
+    "03_Terraform模块/03_05_设计新模块的模式.md",
+    "03_Terraform模块/03_00_总览.md",
     "02_Terraform代码的书写/02_06_资源.md",
+    "02_Terraform代码的书写/02_08_表达式.md",
     "02_Terraform代码的书写/02_12_connection.md",
-    "02_Terraform代码的书写/image/Pasted image 20231117230520.png",
     "02_Terraform代码的书写/02_09_重载文件.md",
     "02_Terraform代码的书写/02_07_数据源.md",
     "02_Terraform代码的书写/02_05_局部值.md",
@@ -198,16 +210,8 @@
     "05_技巧/05_04_provisioner与user_data.md",
     "01_Terraform基础概念/01_02_状态管理.md",
     "04_Terraform命令行/04_10_graph.md",
-    "04_Terraform命令行/image/Pasted image 20231117230016.png",
-    "04_Terraform命令行/image/Pasted image 20231117230003.png",
-    "04_Terraform命令行/image/Pasted image 20231117225921.png",
     "04_02_内置函数/未命名.md",
-    "04_02_内置函数/image/Pasted image 20231117225551.png",
     "04_02_内置函数/image",
-    "03_Terraform模块/03_00_总览.md",
-    "02_Terraform代码的书写/image/Pasted image 20231117222603.png",
-    "02_Terraform代码的书写/image/Pasted image 20231117222548.png",
-    "02_Terraform代码的书写/image/Pasted image 20231117222335.png",
     "04_02_内置函数",
     "02_Terraform代码的书写/02_01_类型.md",
     "02_Terraform代码的书写/02_00_总览_HCL语言.md",
@@ -216,17 +220,12 @@
     "04_Terraform命令行/04_12_init.md",
     "04_Terraform命令行/04_23_login.md",
     "04_Terraform命令行/04_04_apply.md",
-    "01_Terraform基础概念/01_01_Provider.md",
-    "02_Terraform代码的书写/02_11_Checks.md",
-    "04_Terraform命令行/04_18_state_执行修改tf状态文件.md",
-    "04_Terraform命令行/04_17_show_状态文件或是变更计划文件中打印可读的输出信息.md",
     "07_实践2",
     "06_实践",
     "05_技巧",
     "04_Terraform命令行/image",
     "04_Terraform命令行",
     "03_Terraform模块",
-    "02_Terraform代码的书写/image",
-    "02_Terraform代码的书写"
+    "02_Terraform代码的书写/image"
   ]
 }
