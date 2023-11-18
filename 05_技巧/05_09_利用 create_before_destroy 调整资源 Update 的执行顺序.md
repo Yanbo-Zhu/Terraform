@@ -78,3 +78,16 @@ resource "azurerm_public_ip" "lb" {
 ```
 
 `create_before_destroy` 名字里虽然看起来是与 Create 有关，实际上它也会将 Update 与 Create 放在一起调整，声明该参数后实际上是将 `azurerm_public_ip.lb` 的 Delete 推迟到执行 Update 之后再执行了，该问题得解。
+
+
+
+# 2 例子
+
+
+![](image/Pasted%20image%2020231118170923.png)
+
+
+![](image/Pasted%20image%2020231118170956.png)
+
+
+

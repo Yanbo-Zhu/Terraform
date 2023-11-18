@@ -4,35 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "f2cfed700b3e9e79",
+        "id": "ce203c4a4f1e4345",
         "type": "tabs",
         "children": [
           {
-            "id": "cd884ce81c8e96c0",
+            "id": "575991a2c4c9b8fe",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02_Terraform代码的书写/02_03_输入变量.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a13acdfad48b7067",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "03_Terraform模块/03_00_总览.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "provisioner",
+                "query": "workspace",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -106,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03_Terraform模块/03_00_总览.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +105,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03_Terraform模块/03_00_总览.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,9 +126,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "03_Terraform模块/03_00_总览.md"
-              }
+              "state": {}
             }
           },
           {
@@ -179,53 +158,53 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "a13acdfad48b7067",
+  "active": "575991a2c4c9b8fe",
   "lastOpenFiles": [
-    "03_Terraform模块/image/Pasted image 20231118143702.png",
+    "02_Terraform代码的书写/02_10_代码风格范式_namingConvention.md",
+    "02_Terraform代码的书写/02_03_输入变量.md",
+    "00_总览/考试 HashiCorp Certified Terraform Associate.md",
+    "01_Terraform基础概念/未命名.md",
+    "01_Terraform基础概念/01_03_文件树形结构.md",
+    "01_Terraform基础概念/01_00_核心概念.md",
+    "01_Terraform基础概念/image/Pasted image 20231118172352.png",
+    "04_Terraform命令行/04_00_总览.md",
+    "04_Terraform命令行/image/Pasted image 20231118171924.png",
+    "04_Terraform命令行/04_05_console.md",
+    "04_Terraform命令行/image/Pasted image 20231118171908.png",
+    "04_Terraform命令行/04_20_validate_检查语法文件.md",
+    "04_Terraform命令行/04_07_fmt_格式化代码.md",
+    "04_Terraform命令行/image/Pasted image 20231118171652.png",
+    "05_技巧/05_09_利用 create_before_destroy 调整资源 Update 的执行顺序.md",
+    "05_技巧/image/Pasted image 20231118170956.png",
+    "05_技巧/image/Pasted image 20231118170923.png",
+    "05_技巧/image/Pasted image 20231118170855.png",
+    "05_技巧/05_08_创建资源的条件依赖另一个资源的输出时怎么办.md",
+    "05_技巧/05_1.md",
+    "05_技巧/05_01_有条件创造.md",
+    "05_技巧/image/Pasted image 20231118170120.png",
+    "05_技巧/05_10_实现循环.md",
+    "05_技巧/image/Pasted image 20231118165942.png",
+    "05_技巧/image/Pasted image 20231118165806.png",
+    "05_技巧/image",
+    "05_技巧/05_04_provisioner与user_data.md",
+    "05_技巧/05_03_多可用区分布.md",
+    "05_技巧/05_00_总览.md",
+    "04_03_TerraTest/04_03_01.md",
+    "04_03_TerraTest/image",
+    "04_03_TerraTest",
+    "01_Terraform基础概念/01_02_状态管理.md",
+    "01_Terraform基础概念/image",
+    "02_Terraform代码的书写/02_06_资源.md",
+    "03_Terraform模块/03_00_总览.md",
     "03_Terraform模块/03_06_例子.md",
-    "03_Terraform模块/image/Pasted image 20231118143320.png",
-    "03_Terraform模块/image/Pasted image 20231118143246.png",
-    "03_Terraform模块/image/Pasted image 20231118143147.png",
-    "03_Terraform模块/image/Pasted image 20231118143110.png",
-    "03_Terraform模块/image/Pasted image 20231118143057.png",
-    "03_Terraform模块/image/Pasted image 20231118143037.png",
-    "03_Terraform模块/image/Pasted image 20231118143024.png",
-    "03_Terraform模块/image/Pasted image 20231118142951.png",
-    "03_Terraform模块/image/Pasted image 20231118142918.png",
-    "03_Terraform模块/image/Pasted image 20231118142834.png",
     "03_Terraform模块/image",
     "03_Terraform模块/03_02_引用模块.md",
     "03_Terraform模块/03_01_创建模块.md",
     "03_Terraform模块/03_05_设计新模块的模式.md",
-    "03_Terraform模块/03_00_总览.md",
-    "02_Terraform代码的书写/02_06_资源.md",
-    "02_Terraform代码的书写/02_08_表达式.md",
-    "02_Terraform代码的书写/02_12_connection.md",
-    "02_Terraform代码的书写/02_09_重载文件.md",
-    "02_Terraform代码的书写/02_07_数据源.md",
-    "02_Terraform代码的书写/02_05_局部值.md",
-    "02_Terraform代码的书写/02_04_输出值.md",
-    "02_Terraform代码的书写/02_03_输入变量.md",
-    "02_Terraform代码的书写/02_02_配置语法.md",
-    "05_技巧/05_04_provisioner与user_data.md",
-    "01_Terraform基础概念/01_02_状态管理.md",
-    "04_Terraform命令行/04_10_graph.md",
-    "04_02_内置函数/未命名.md",
     "04_02_内置函数/image",
     "04_02_内置函数",
-    "02_Terraform代码的书写/02_01_类型.md",
-    "02_Terraform代码的书写/02_00_总览_HCL语言.md",
-    "02_Terraform代码的书写/02_10_代码风格范式.md",
-    "01_Terraform基础概念/01_03_文件树形结构.md",
-    "04_Terraform命令行/04_12_init.md",
-    "04_Terraform命令行/04_23_login.md",
-    "04_Terraform命令行/04_04_apply.md",
     "07_实践2",
     "06_实践",
-    "05_技巧",
-    "04_Terraform命令行/image",
-    "04_Terraform命令行",
-    "03_Terraform模块",
-    "02_Terraform代码的书写/image"
+    "05_技巧"
   ]
 }
