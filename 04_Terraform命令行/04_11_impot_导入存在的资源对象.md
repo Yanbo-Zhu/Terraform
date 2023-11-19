@@ -1,6 +1,8 @@
 
 # 1 import
 
+import  the exisiting infrastructure in your .tfstate file 
+
 terraform import命令用来将已经存在的资源对象导入Terraform。
 
 我们并不总是那么幸运，能够在项目一开始就使用Terraform来构建和管理我们的基础设施；有时我们有一组已经运行着的基础设施资源，然后我们为它们编写了相应的Terraform代码，我们进行了测试，确认了这组代码描述的基础设施与当前正在使用的基础设施是等价的；但是我们仍然无法直接使用这套代码来管理现有的基础设施，因为我们缺乏了相应的状态文件。这时我们需要使用terraform import将资源对象“导入”到Terraform状态文件中去。
@@ -51,6 +53,9 @@ provider "aws" {
 ```
 $ terraform import aws_instance.foo i-abcd1234
 ```
+
+![](image/Pasted%20image%2020231119163543.png)
+后面的 为 aws instance 的 id 
 
 ```
 $ terraform import module.foo.aws_instance.bar i-abcd1234

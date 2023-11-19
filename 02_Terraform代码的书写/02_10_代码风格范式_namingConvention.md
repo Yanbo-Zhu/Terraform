@@ -33,6 +33,20 @@ resource "aws_instance" "example" {
 - 顶层块之间应空一行分隔。内嵌块之间也应该空一行分隔，除非是相同类型的内嵌块(比如resource块内部多个provisioner块)
 - 同类型块之间尽量避免插入其他类型块，除非不同类型块共同组成了一个有语义的家族(比方说，`aws_instnace`资源内的`root_block_device`、`ebs_block_device`、`ephemeral_block_device`内嵌块共同构成了描述AWS块存储的块家族，所以他们可以被混合编写)。
 
+
+
+## 1.1 Documentation（文档）
+
+1 自动生成的文档
+​Pre-commit 是一个用于管理和维护多语言预提交挂钩的框架。它是用 Python 编写的，是一个强大的工具，可以在代码提交到 git 存储库之前在开发人员的机器上自动执行某些操作。通常，它用于运行 linters 和格式化代码
+通过 Terraform 配置，`pre-commit`可用于格式化和验证代码，以及更新文档。
+
+查看 https://github.com/antonbabenko/pre-commit-terraform/blob/master/README.md 以熟悉它，
+以及已经使用它的现有存储库 https://github.com/terraform-aws-modules/terraform-aws-vpc
+
+2 terraform-docs
+https://github.com/terraform-docs/terraform-docs 是一种工具，可以从 Terraform 模块以各种输出格式完成文档的生成。你可以手动运行它（没有预提交挂钩），或使用 https://github.com/antonbabenko/pre-commit-terraform 来自动更新文档。
+
 # 2 NamingConvention
 
 
@@ -150,7 +164,7 @@ resource "aws_nat_gateway" "this" {    # Good
 ```
 
 
-## 2.4 Variables（变量）[](https://www.terraform-best-practices.com/v/zh/naming#variables-bian-liang)
+## 2.4 Variables（变量）
 
 - 不要在资源模块中重新造轮子：使用你正在使用的资源的“参数参考”部分中定义的变量 `name，description`和 `default`。
 - 对变量验证的支持相当有限（例如，无法访问其他变量或进行查找）。 相应地计划，因为在许多情况下此功能是无用的。
@@ -162,7 +176,7 @@ resource "aws_nat_gateway" "this" {    # Good
 - 使用类型`any`来禁用从某个深度开始或者在支持多个类型时的类型验证。
 - 值`{}`有时是一个map，有时是一个对象。使用`tomap(...)` 制作map，因为没有办法制作对象。
 
-## 2.5 Outputs（输出）[](https://www.terraform-best-practices.com/v/zh/naming#outputs-shu-chu)
+## 2.5 Outputs（输出）
 
 使输出在其范围之外保持一致且易于理解（当用户使用模块时，它返回的值的类型和属性应该很明显）。
 - 输出的名称应该描述它包含的属性，并且不像你通常想要的那样自由。
@@ -178,7 +192,7 @@ resource "aws_nat_gateway" "this" {    # Good
 避免设置`sensitive`参数， 除非您完全控制此输出在所有模块的所有位置的使用。
 更喜欢`try()`（自 Terraform 0.13 起可用）而不是 `element(concat(...))`（0.13 之前版本的旧方法）
 
-### 2.5.1 `output`（输出）代码示例[](https://www.terraform-best-practices.com/v/zh/naming#output-shu-chu-dai-ma-shi-li)
+### 2.5.1 `output`（输出）代码示例
 
 最多返回一个安全组ID：
 ```
@@ -197,7 +211,8 @@ output "this_security_group_id" {
 ```
 
 
-### 2.5.2 如果返回值是列表，则使用复数名称[](https://www.terraform-best-practices.com/v/zh/naming#ru-guo-fan-hui-zhi-shi-lie-biao-ze-shi-yong-fu-shu-ming-cheng)
+### 2.5.2 如果返回值是列表，则使用复数名称
+
 ```
 output "rds_cluster_instance_endpoints" {
   description = "A list of all cluster instance endpoints"
