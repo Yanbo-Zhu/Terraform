@@ -4,59 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "ce203c4a4f1e4345",
+        "id": "401a5ae36ecd3be9",
         "type": "tabs",
         "children": [
           {
-            "id": "575991a2c4c9b8fe",
+            "id": "fccfcf3dade06da8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02_Terraform代码的书写/02_07_数据源.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "71a61fca60736066",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04_Terraform命令行/04_11_impot_导入存在的资源对象.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5c9e2518239c7b4b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "07_AWS实践/07_01_Creating_VPC.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b8f24db390367189",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "07_AWS实践/07_03_EBS_Volume.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -85,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "terraform get",
+                "query": "templatefile",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -130,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "07_AWS实践/07_03_EBS_Volume.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +105,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "07_AWS实践/07_03_EBS_Volume.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,9 +126,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "07_AWS实践/07_03_EBS_Volume.md"
-              }
+              "state": {}
             }
           },
           {
@@ -203,47 +158,46 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "b8f24db390367189",
+  "active": "fccfcf3dade06da8",
   "lastOpenFiles": [
-    "07_AWS实践/image/Pasted image 20231119174240.png",
-    "07_AWS实践/image/Pasted image 20231119174141.png",
-    "07_AWS实践/image/Pasted image 20231119173932.png",
-    "07_AWS实践/07_02_LanchEC2InstanceInVPC.md",
-    "07_AWS实践/07_03_EBS_Volume.md",
-    "07_AWS实践/image/Pasted image 20231119172920.png",
-    "07_AWS实践/image/Pasted image 20231119172832.png",
-    "07_AWS实践/image/Pasted image 20231119172721.png",
-    "07_AWS实践/image/Pasted image 20231119172659.png",
-    "07_AWS实践/image/Pasted image 20231119172601.png",
-    "07_AWS实践/image/Pasted image 20231119172409.png",
-    "image",
+    "07_AWS实践/07_06_RDS.md",
     "07_AWS实践/07_01_Creating_VPC.md",
-    "02_Terraform代码的书写/02_04_输出值.md",
-    "02_Terraform代码的书写/02_05_局部值.md",
-    "07_AWS实践/image/Pasted image 20231119165846.png",
-    "07_AWS实践/image/Pasted image 20231119165321.png",
-    "07_AWS实践/image",
+    "02_Terraform代码的书写/02_07_数据源.md",
     "04_Terraform命令行/04_11_impot_导入存在的资源对象.md",
+    "07_AWS实践/image/Pasted image 20231120224840.png",
+    "07_AWS实践/image/Pasted image 20231120224001.png",
+    "07_AWS实践/image/Pasted image 20231120223844.png",
+    "07_AWS实践/image/Pasted image 20231120223834.png",
+    "07_AWS实践/image/Pasted image 20231120223752.png",
+    "07_AWS实践/image/Pasted image 20231120223730.png",
+    "07_AWS实践/image/Pasted image 20231120223653.png",
+    "07_AWS实践/image/Pasted image 20231120223640.png",
+    "07_AWS实践/image/Pasted image 20231120223600.png",
+    "07_AWS实践/image/Pasted image 20231120223540.png",
+    "07_AWS实践/07_05_StaticPrivateIP_ElasticIP_Route53.md",
+    "07_AWS实践/07_04_UserData.md",
+    "04_02_内置函数/04_02_01.md",
+    "07_AWS实践/07_03_EBS_Volume.md",
+    "04_Terraform命令行/04_16_refresh.md",
+    "04_Terraform命令行/04_04_apply.md",
+    "04_Terraform命令行/04_13_output_提取状态文件中输出值的值.md",
+    "02_Terraform代码的书写/02_03_输入变量.md",
+    "02_Terraform代码的书写/02_05_局部值.md",
+    "01_Terraform基础概念/01_03_文件树形结构.md",
+    "01_Terraform基础概念/01_00_核心概念.md",
+    "01_Terraform基础概念/01_02_状态管理.md",
+    "02_Terraform代码的书写/02_04_输出值.md",
+    "01_Terraform基础概念/未命名.md",
+    "03_Terraform模块/03_06_例子.md",
+    "07_AWS实践/07_02_LanchEC2InstanceInVPC.md",
+    "image",
+    "07_AWS实践/image",
     "07_AWS实践",
     "04_Terraform命令行/04_19_taint_标记某个Terraform管理的资源有污点.md",
     "04_Terraform命令行/04_00_总览.md",
     "04_Terraform命令行/04_09_get_下载模块.md",
-    "03_Terraform模块/03_06_例子.md",
     "03_Terraform模块/03_01_创建模块.md",
-    "02_Terraform代码的书写/02_07_数据源.md",
-    "04_02_内置函数/04_02_01.md",
     "06_实践/CloudPosse 的 Terraform 最佳实践.md",
-    "01_Terraform基础概念/01_02_状态管理.md",
-    "01_Terraform基础概念/01_00_核心概念.md",
-    "02_Terraform代码的书写/02_06_资源.md",
-    "02_Terraform代码的书写/02_03_输入变量.md",
-    "01_Terraform基础概念/01_03_文件树形结构.md",
-    "02_Terraform代码的书写/02_09_重载文件.md",
-    "02_Terraform代码的书写/02_10_代码风格范式_namingConvention.md",
-    "00_总览/考试 HashiCorp Certified Terraform Associate.md",
-    "01_Terraform基础概念/未命名.md",
-    "04_Terraform命令行/04_05_console.md",
-    "04_Terraform命令行/04_20_validate_检查语法文件.md",
     "05_技巧/image",
     "04_03_TerraTest/image",
     "04_03_TerraTest",
