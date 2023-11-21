@@ -29,7 +29,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_Terraform代码的书写/02_06_资源.md",
+                "file": "03_Terraform模块/03_02_引用模块.md",
                 "mode": "source",
                 "source": false
               }
@@ -130,6 +130,12 @@
               "type": "backlink",
               "state": {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+||||||| Stash base
+                "file": "02_Terraform代码的书写/02_06_资源.md",
+=======
+                "file": "03_Terraform模块/03_02_引用模块.md",
+>>>>>>> Stashed changes
 ||||||| Stash base
                 "file": "02_Terraform代码的书写/02_06_资源.md",
 =======
@@ -152,6 +158,12 @@
               "type": "outgoing-link",
               "state": {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+||||||| Stash base
+                "file": "02_Terraform代码的书写/02_06_资源.md",
+=======
+                "file": "03_Terraform模块/03_02_引用模块.md",
+>>>>>>> Stashed changes
 ||||||| Stash base
                 "file": "02_Terraform代码的书写/02_06_资源.md",
 =======
@@ -182,7 +194,7 @@
               "state": {}
 ||||||| Stash base
               "state": {
-                "file": "02_Terraform代码的书写/02_06_资源.md"
+                "file": "03_Terraform模块/03_02_引用模块.md"
               }
 =======
               "state": {
@@ -223,14 +235,22 @@
   "active": "fccfcf3dade06da8",
   "lastOpenFiles": [
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "07_AWS实践/07_06_RDS.md",
     "07_AWS实践/07_01_Creating_VPC.md",
 ||||||| Stash base
+||||||| Stash base
+=======
+    "03_Terraform模块/image/Pasted image 20231121152315.png",
+    "03_Terraform模块/image/Pasted image 20231121152305.png",
+    "03_Terraform模块/image/Pasted image 20231121152051.png",
+    "03_Terraform模块/image",
+    "02_Terraform代码的书写/02_06_资源.md",
+>>>>>>> Stashed changes
     "02_Terraform代码的书写/image/Pasted image 20231117231343.png",
     "02_Terraform代码的书写/image/Pasted image 20231117231331.png",
     "02_Terraform代码的书写/image/Pasted image 20231117231015.png",
     "02_Terraform代码的书写/02_08_表达式.md",
-    "02_Terraform代码的书写/02_06_资源.md",
     "02_Terraform代码的书写/02_12_connection.md",
     "02_Terraform代码的书写/image/Pasted image 20231117230520.png",
     "02_Terraform代码的书写/02_09_重载文件.md",
@@ -281,9 +301,6 @@
     "04_02_内置函数/image/Pasted image 20231117225551.png",
     "04_02_内置函数/image",
     "03_Terraform模块/03_00_总览.md",
-    "02_Terraform代码的书写/image/Pasted image 20231117222603.png",
-    "02_Terraform代码的书写/image/Pasted image 20231117222548.png",
-    "02_Terraform代码的书写/image/Pasted image 20231117222335.png",
     "04_02_内置函数",
     "02_Terraform代码的书写/02_01_类型.md",
     "02_Terraform代码的书写/02_00_总览_HCL语言.md",
@@ -352,6 +369,7 @@
     "04_Terraform命令行/image",
     "04_Terraform命令行",
     "03_Terraform模块",
+<<<<<<< Updated upstream
     "02_Terraform代码的书写/image",
     "02_Terraform代码的书写"
 =======
@@ -365,6 +383,12 @@
     "04_Terraform命令行/image",
     "04_Terraform命令行",
     "03_Terraform模块",
+    "02_Terraform代码的书写/image"
+>>>>>>> Stashed changes
+||||||| Stash base
+    "02_Terraform代码的书写/image",
+    "02_Terraform代码的书写"
+=======
     "02_Terraform代码的书写/image"
 >>>>>>> Stashed changes
   ]
