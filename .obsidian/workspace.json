@@ -8,7 +8,15 @@
         "type": "tabs",
         "children": [
           {
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
             "id": "1f85ece1764e3a07",
+=======
+            "id": "c56f196800916c23",
+>>>>>>> Stashed changes
+=======
+            "id": "c56f196800916c23",
+>>>>>>> Stashed changes
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -226,6 +234,8 @@
       "workspaces:管理工作区布局": false
     }
   },
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "active": "1f85ece1764e3a07",
   "lastOpenFiles": [
 <<<<<<< Updated upstream
@@ -327,6 +337,63 @@
     "04_Terraform命令行",
     "03_Terraform模块",
     "02_Terraform代码的书写/image"
+>>>>>>> Stashed changes
+=======
+  "active": "c56f196800916c23",
+  "lastOpenFiles": [
+=======
+  "active": "c56f196800916c23",
+  "lastOpenFiles": [
+>>>>>>> Stashed changes
+    "08_Packer/08_01_01.md",
+    "07_02_ContainerOnAWS/07_11_Container_OnAWS.md",
+    "05_技巧/05_01_有条件创造.md",
+    "04_02_内置函数/04_02_01.md",
+    "01_Terraform基础概念/01_03_文件树形结构.md",
+    "07_02_ContainerOnAWS/image/Pasted image 20231121230305.png",
+    "07_02_ContainerOnAWS/image/Pasted image 20231121225657.png",
+    "07_02_ContainerOnAWS/image/Pasted image 20231121225618.png",
+    "07_02_ContainerOnAWS/image/Pasted image 20231121225423.png",
+    "07_02_ContainerOnAWS/image/Pasted image 20231121225241.png",
+    "07_02_ContainerOnAWS/image/Pasted image 20231121224529.png",
+    "07_02_ContainerOnAWS/image/Pasted image 20231121224504.png",
+    "07_02_ContainerOnAWS/image/Pasted image 20231121224316.png",
+    "07_02_ContainerOnAWS/image/Pasted image 20231121223501.png",
+    "07_02_ContainerOnAWS/image/Pasted image 20231121223301.png",
+    "07_02_ContainerOnAWS/image",
+    "07_02_ContainerOnAWS",
+    "08_Packer/image",
+    "08_Packer",
+    "01_Terraform基础概念/01_03_文件树形结构_ProjectStructure.md",
+    "04_02_内置函数/04_02_01_理论.md",
+    "04_02_内置函数/04_02_02_常用function.md",
+    "05_技巧/05_01_有条件创造_Conditionals.md",
+    "02_Terraform代码的书写/02_13_内插.md",
+    "02_Terraform代码的书写/02_03_输入变量.md",
+    "02_Terraform代码的书写/02_06_资源.md",
+    "02_Terraform代码的书写/02_09_重载文件.md",
+    "07_AWS实践/07_10_Elastic_Beanstalk.md",
+    "07_AWS实践/07_09_Load_balancer.md",
+    "07_AWS实践/07_08_Autoscaling.md",
+    "07_AWS实践/07_07_IAM_user_group_roles.md",
+    "07_AWS实践/07_06_RDS.md",
+    "07_AWS实践/07_01_Creating_VPC.md",
+    "02_Terraform代码的书写/02_07_数据源.md",
+    "04_Terraform命令行/04_11_impot_导入存在的资源对象.md",
+    "07_AWS实践/07_05_StaticPrivateIP_ElasticIP_Route53.md",
+    "07_AWS实践/07_04_UserData.md",
+    "07_AWS实践/07_03_EBS_Volume.md",
+    "04_Terraform命令行/04_16_refresh.md",
+    "04_Terraform命令行/04_04_apply.md",
+    "image",
+    "07_AWS实践/image",
+    "07_AWS实践",
+    "05_技巧/image",
+    "04_03_TerraTest/image",
+    "04_03_TerraTest"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   ]
 }
