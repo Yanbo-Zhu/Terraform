@@ -30,6 +30,7 @@
               "type": "markdown",
               "state": {
                 "file": "03_Terraform模块/03_02_引用模块.md",
+<<<<<<< Updated upstream
                 "mode": "source",
                 "source": false
               }
@@ -37,6 +38,10 @@
               "type": "markdown",
               "state": {
                 "file": "02_Terraform代码的书写/02_03_输入变量.md",
+||||||| Stash base
+                "file": "02_Terraform代码的书写/02_06_资源.md",
+=======
+>>>>>>> Stashed changes
                 "mode": "source",
                 "source": false
               }
@@ -131,6 +136,12 @@
               "state": {
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+||||||| Stash base
+                "file": "02_Terraform代码的书写/02_06_资源.md",
+=======
+                "file": "03_Terraform模块/03_02_引用模块.md",
+>>>>>>> Stashed changes
 ||||||| Stash base
                 "file": "02_Terraform代码的书写/02_06_资源.md",
 =======
@@ -159,6 +170,12 @@
               "state": {
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+||||||| Stash base
+                "file": "02_Terraform代码的书写/02_06_资源.md",
+=======
+                "file": "03_Terraform模块/03_02_引用模块.md",
+>>>>>>> Stashed changes
 ||||||| Stash base
                 "file": "02_Terraform代码的书写/02_06_资源.md",
 =======
@@ -236,9 +253,18 @@
   "lastOpenFiles": [
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "07_AWS实践/07_06_RDS.md",
     "07_AWS实践/07_01_Creating_VPC.md",
 ||||||| Stash base
+||||||| Stash base
+=======
+    "03_Terraform模块/image/Pasted image 20231121152315.png",
+    "03_Terraform模块/image/Pasted image 20231121152305.png",
+    "03_Terraform模块/image/Pasted image 20231121152051.png",
+    "03_Terraform模块/image",
+    "02_Terraform代码的书写/02_06_资源.md",
+>>>>>>> Stashed changes
 ||||||| Stash base
 =======
     "03_Terraform模块/image/Pasted image 20231121152315.png",
@@ -370,6 +396,7 @@
     "04_Terraform命令行",
     "03_Terraform模块",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "02_Terraform代码的书写/image",
     "02_Terraform代码的书写"
 =======
@@ -383,6 +410,12 @@
     "04_Terraform命令行/image",
     "04_Terraform命令行",
     "03_Terraform模块",
+    "02_Terraform代码的书写/image"
+>>>>>>> Stashed changes
+||||||| Stash base
+    "02_Terraform代码的书写/image",
+    "02_Terraform代码的书写"
+=======
     "02_Terraform代码的书写/image"
 >>>>>>> Stashed changes
 ||||||| Stash base
