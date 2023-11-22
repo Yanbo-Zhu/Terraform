@@ -40,8 +40,6 @@ Terraform 在执行的时候 不会递归下载子目录中的任何文件。 �
 
 # 4 如何考虑 Terraform 配置结构
 
-
-
 结构化代码的常见建议[](https://www.terraform-best-practices.com/v/zh/code-structure#jie-gou-hua-dai-ma-de-chang-jian-jian-yi)
 
 使用更少的资源可以更轻松、更快速地进行工作
@@ -78,3 +76,15 @@ Terraform 在执行的时候 不会递归下载子目录中的任何文件。 �
 - Ansible 或类似的通用自动化工具。通常在 Ansible 之后采用 Terraform 时使用，或者在积极使用 Ansible UI 时使用。
 
 Crossplane​ 和其他受 Kubernetes 启发的解决方案。有时，利用 Kubernetes 生态系统并采用reconciliation loop（协调循环）功能来实现 Terraform 配置的所需状态是有意义的。 观看视频 crossplane vs Terraform 了解更多信息。
+
+# 6 Project Structure 
+
+
+![](image/Pasted%20image%2020231121214658.png)
+
+![](image/Pasted%20image%2020231121214712.png)
+
+
+
+
+

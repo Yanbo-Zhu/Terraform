@@ -1,6 +1,14 @@
 
 使用 condtion ? true_val : fals_val
-# 1 有条件创建
+
+# 1 理论
+
+![](image/Pasted%20image%2020231121205619.png)
+
+![](image/Pasted%20image%2020231121205805.png)
+
+
+# 2 有条件创建
 
 Terraform被设计成声明式而非命令式，例如没有常见的`if`条件语句，后来才加上了`count`和`for_each`实现的循环语句(但循环的次数必须是在plan阶段就能够确认的，无法根据其他resource的输出动态决定)
 
@@ -73,7 +81,7 @@ output "public_ip" {
 ```
 
 
-# 2 有条件选择
+# 3 有条件选择
 
 ![](image/Pasted%20image%2020231118170120.png)
 

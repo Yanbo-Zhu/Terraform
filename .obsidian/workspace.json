@@ -11,11 +11,28 @@
             "id": "3fa578b2fbc5f6bc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "01_Terraform基础概念/01_03_文件树形结构_ProjectStructure.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c56f196800916c23",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "07_02_ContainerOnAWS/07_11_Container_OnAWS.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,6 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "07_02_ContainerOnAWS/07_11_Container_OnAWS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "07_02_ContainerOnAWS/07_11_Container_OnAWS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -114,7 +133,21 @@
             }
           },
           {
+<<<<<<< Updated upstream
             "id": "f08783cceacb2fe6",
+=======
+            "id": "925c8f42b32cacf1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "07_02_ContainerOnAWS/07_11_Container_OnAWS.md"
+              }
+            }
+          },
+          {
+            "id": "26fa3fd6e47a838b",
+>>>>>>> Stashed changes
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -150,6 +183,58 @@
       "workspaces:管理工作区布局": false
     }
   },
+<<<<<<< Updated upstream
   "active": "3fa578b2fbc5f6bc",
   "lastOpenFiles": []
+=======
+  "active": "c56f196800916c23",
+  "lastOpenFiles": [
+    "07_02_ContainerOnAWS/image/Pasted image 20231121230305.png",
+    "07_02_ContainerOnAWS/image/Pasted image 20231121225657.png",
+    "07_02_ContainerOnAWS/image/Pasted image 20231121225618.png",
+    "07_02_ContainerOnAWS/image/Pasted image 20231121225423.png",
+    "07_02_ContainerOnAWS/image/Pasted image 20231121225241.png",
+    "07_02_ContainerOnAWS/image/Pasted image 20231121224529.png",
+    "07_02_ContainerOnAWS/image/Pasted image 20231121224504.png",
+    "07_02_ContainerOnAWS/image/Pasted image 20231121224316.png",
+    "07_02_ContainerOnAWS/image/Pasted image 20231121223501.png",
+    "07_02_ContainerOnAWS/image/Pasted image 20231121223301.png",
+    "07_02_ContainerOnAWS/image",
+    "07_02_ContainerOnAWS",
+    "08_Packer/08_01_01.md",
+    "07_02_ContainerOnAWS/07_11_Container_OnAWS.md",
+    "08_Packer/image/Pasted image 20231121221945.png",
+    "08_Packer/image",
+    "08_Packer",
+    "01_Terraform基础概念/01_03_文件树形结构_ProjectStructure.md",
+    "04_02_内置函数/04_02_01_理论.md",
+    "04_02_内置函数/04_02_02_常用function.md",
+    "05_技巧/05_01_有条件创造_Conditionals.md",
+    "02_Terraform代码的书写/02_13_内插.md",
+    "02_Terraform代码的书写/02_03_输入变量.md",
+    "02_Terraform代码的书写/02_06_资源.md",
+    "02_Terraform代码的书写/02_09_重载文件.md",
+    "07_AWS实践/07_10_Elastic_Beanstalk.md",
+    "07_AWS实践/07_09_Load_balancer.md",
+    "07_AWS实践/07_08_Autoscaling.md",
+    "07_AWS实践/07_07_IAM_user_group_roles.md",
+    "07_AWS实践/07_06_RDS.md",
+    "07_AWS实践/07_01_Creating_VPC.md",
+    "02_Terraform代码的书写/02_07_数据源.md",
+    "04_Terraform命令行/04_11_impot_导入存在的资源对象.md",
+    "07_AWS实践/07_05_StaticPrivateIP_ElasticIP_Route53.md",
+    "07_AWS实践/07_04_UserData.md",
+    "07_AWS实践/07_03_EBS_Volume.md",
+    "04_Terraform命令行/04_16_refresh.md",
+    "04_Terraform命令行/04_04_apply.md",
+    "04_Terraform命令行/04_13_output_提取状态文件中输出值的值.md",
+    "02_Terraform代码的书写/02_05_局部值.md",
+    "image",
+    "07_AWS实践/image",
+    "07_AWS实践",
+    "05_技巧/image",
+    "04_03_TerraTest/image",
+    "04_03_TerraTest"
+  ]
+>>>>>>> Stashed changes
 }
