@@ -8,7 +8,11 @@
         "type": "tabs",
         "children": [
           {
+<<<<<<< Updated upstream
             "id": "3fa578b2fbc5f6bc",
+=======
+            "id": "c56f196800916c23",
+>>>>>>> Stashed changes
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -184,11 +188,21 @@
     }
   },
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "active": "3fa578b2fbc5f6bc",
   "lastOpenFiles": []
 =======
   "active": "c56f196800916c23",
   "lastOpenFiles": [
+=======
+  "active": "c56f196800916c23",
+  "lastOpenFiles": [
+    "08_Packer/08_01_01.md",
+    "07_02_ContainerOnAWS/07_11_Container_OnAWS.md",
+    "05_技巧/05_01_有条件创造.md",
+    "04_02_内置函数/04_02_01.md",
+    "01_Terraform基础概念/01_03_文件树形结构.md",
+>>>>>>> Stashed changes
     "07_02_ContainerOnAWS/image/Pasted image 20231121230305.png",
     "07_02_ContainerOnAWS/image/Pasted image 20231121225657.png",
     "07_02_ContainerOnAWS/image/Pasted image 20231121225618.png",
@@ -201,9 +215,12 @@
     "07_02_ContainerOnAWS/image/Pasted image 20231121223301.png",
     "07_02_ContainerOnAWS/image",
     "07_02_ContainerOnAWS",
+<<<<<<< Updated upstream
     "08_Packer/08_01_01.md",
     "07_02_ContainerOnAWS/07_11_Container_OnAWS.md",
     "08_Packer/image/Pasted image 20231121221945.png",
+=======
+>>>>>>> Stashed changes
     "08_Packer/image",
     "08_Packer",
     "01_Terraform基础概念/01_03_文件树形结构_ProjectStructure.md",
@@ -227,8 +244,11 @@
     "07_AWS实践/07_03_EBS_Volume.md",
     "04_Terraform命令行/04_16_refresh.md",
     "04_Terraform命令行/04_04_apply.md",
+<<<<<<< Updated upstream
     "04_Terraform命令行/04_13_output_提取状态文件中输出值的值.md",
     "02_Terraform代码的书写/02_05_局部值.md",
+=======
+>>>>>>> Stashed changes
     "image",
     "07_AWS实践/image",
     "07_AWS实践",
