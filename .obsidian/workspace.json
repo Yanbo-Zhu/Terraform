@@ -1,56 +1,39 @@
 {
   "main": {
-    "id": "89093f86c2e8800b",
+    "id": "73910c6db37f54b5",
     "type": "split",
     "children": [
       {
-        "id": "73907c078d034c5e",
+        "id": "ab23c9a76bab1c07",
         "type": "tabs",
         "children": [
           {
-<<<<<<< Updated upstream
-            "id": "3fa578b2fbc5f6bc",
-=======
-            "id": "c56f196800916c23",
->>>>>>> Stashed changes
+            "id": "9337afe178b9eefa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_Terraform基础概念/01_03_文件树形结构_ProjectStructure.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c56f196800916c23",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "07_02_ContainerOnAWS/07_11_Container_OnAWS.md",
+                "file": "03_Terraform模块/03_00_总览.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "30a17bc97b4d28f1",
+    "id": "d63ed8902d328720",
     "type": "split",
     "children": [
       {
-        "id": "86a7b0c97ae83eed",
+        "id": "fbc964441a716b0e",
         "type": "tabs",
         "children": [
           {
-            "id": "e5f47bf0e49727d0",
+            "id": "37697c9a8a5e963b",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -60,7 +43,7 @@
             }
           },
           {
-            "id": "133370d4f867cf5b",
+            "id": "13691f685680e6d7",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -75,7 +58,7 @@
             }
           },
           {
-            "id": "41c22ab88a3d1a91",
+            "id": "62d799071a549d77",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -89,20 +72,20 @@
     "width": 300
   },
   "right": {
-    "id": "18cf414ddcee8033",
+    "id": "122c79580ae4be63",
     "type": "split",
     "children": [
       {
-        "id": "ae534b24b4e942fd",
+        "id": "70630e38fa91f719",
         "type": "tabs",
         "children": [
           {
-            "id": "19057a8279859acb",
+            "id": "068ae674e2e22bf7",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "07_02_ContainerOnAWS/07_11_Container_OnAWS.md",
+                "file": "03_Terraform模块/03_00_总览.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,19 +97,19 @@
             }
           },
           {
-            "id": "b4a2a360b45b3eb5",
+            "id": "16834eb5ee2def29",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "07_02_ContainerOnAWS/07_11_Container_OnAWS.md",
+                "file": "03_Terraform模块/03_00_总览.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "2a262b1d8e67fa71",
+            "id": "a1a55022d715fd74",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -137,21 +120,7 @@
             }
           },
           {
-<<<<<<< Updated upstream
-            "id": "f08783cceacb2fe6",
-=======
-            "id": "925c8f42b32cacf1",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "07_02_ContainerOnAWS/07_11_Container_OnAWS.md"
-              }
-            }
-          },
-          {
-            "id": "26fa3fd6e47a838b",
->>>>>>> Stashed changes
+            "id": "c280d9136ad9045e",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -161,19 +130,21 @@
             }
           },
           {
-            "id": "57faa36d288418ac",
+            "id": "d6bbd0bbfac0a76d",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "03_Terraform模块/03_00_总览.md"
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 234.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -187,74 +158,19 @@
       "workspaces:管理工作区布局": false
     }
   },
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  "active": "3fa578b2fbc5f6bc",
-  "lastOpenFiles": []
-=======
-  "active": "c56f196800916c23",
+  "active": "9337afe178b9eefa",
   "lastOpenFiles": [
-=======
-  "active": "c56f196800916c23",
-  "lastOpenFiles": [
-    "08_Packer/08_01_01.md",
+    "03_Terraform模块/image/Pasted image 20231122214839.png",
+    "03_Terraform模块/image/Pasted image 20231122214800.png",
+    "03_Terraform模块/image/Pasted image 20231122214724.png",
     "07_02_ContainerOnAWS/07_11_Container_OnAWS.md",
-    "05_技巧/05_01_有条件创造.md",
-    "04_02_内置函数/04_02_01.md",
-    "01_Terraform基础概念/01_03_文件树形结构.md",
->>>>>>> Stashed changes
-    "07_02_ContainerOnAWS/image/Pasted image 20231121230305.png",
-    "07_02_ContainerOnAWS/image/Pasted image 20231121225657.png",
-    "07_02_ContainerOnAWS/image/Pasted image 20231121225618.png",
-    "07_02_ContainerOnAWS/image/Pasted image 20231121225423.png",
-    "07_02_ContainerOnAWS/image/Pasted image 20231121225241.png",
-    "07_02_ContainerOnAWS/image/Pasted image 20231121224529.png",
-    "07_02_ContainerOnAWS/image/Pasted image 20231121224504.png",
-    "07_02_ContainerOnAWS/image/Pasted image 20231121224316.png",
-    "07_02_ContainerOnAWS/image/Pasted image 20231121223501.png",
-    "07_02_ContainerOnAWS/image/Pasted image 20231121223301.png",
-    "07_02_ContainerOnAWS/image",
-    "07_02_ContainerOnAWS",
-<<<<<<< Updated upstream
-    "08_Packer/08_01_01.md",
-    "07_02_ContainerOnAWS/07_11_Container_OnAWS.md",
-    "08_Packer/image/Pasted image 20231121221945.png",
-=======
->>>>>>> Stashed changes
-    "08_Packer/image",
-    "08_Packer",
-    "01_Terraform基础概念/01_03_文件树形结构_ProjectStructure.md",
-    "04_02_内置函数/04_02_01_理论.md",
-    "04_02_内置函数/04_02_02_常用function.md",
-    "05_技巧/05_01_有条件创造_Conditionals.md",
-    "02_Terraform代码的书写/02_13_内插.md",
-    "02_Terraform代码的书写/02_03_输入变量.md",
-    "02_Terraform代码的书写/02_06_资源.md",
-    "02_Terraform代码的书写/02_09_重载文件.md",
-    "07_AWS实践/07_10_Elastic_Beanstalk.md",
-    "07_AWS实践/07_09_Load_balancer.md",
-    "07_AWS实践/07_08_Autoscaling.md",
-    "07_AWS实践/07_07_IAM_user_group_roles.md",
-    "07_AWS实践/07_06_RDS.md",
-    "07_AWS实践/07_01_Creating_VPC.md",
-    "02_Terraform代码的书写/02_07_数据源.md",
-    "04_Terraform命令行/04_11_impot_导入存在的资源对象.md",
-    "07_AWS实践/07_05_StaticPrivateIP_ElasticIP_Route53.md",
-    "07_AWS实践/07_04_UserData.md",
-    "07_AWS实践/07_03_EBS_Volume.md",
-    "04_Terraform命令行/04_16_refresh.md",
-    "04_Terraform命令行/04_04_apply.md",
-<<<<<<< Updated upstream
-    "04_Terraform命令行/04_13_output_提取状态文件中输出值的值.md",
-    "02_Terraform代码的书写/02_05_局部值.md",
-=======
->>>>>>> Stashed changes
-    "image",
-    "07_AWS实践/image",
-    "07_AWS实践",
-    "05_技巧/image",
-    "04_03_TerraTest/image",
-    "04_03_TerraTest"
+    "07_02_ContainerOnAWS/image/Pasted image 20231122211654.png",
+    "07_02_ContainerOnAWS/image/Pasted image 20231122211324.png",
+    "07_02_ContainerOnAWS/image/Pasted image 20231122211237.png",
+    "07_02_ContainerOnAWS/image/Pasted image 20231122210858.png",
+    "07_02_ContainerOnAWS/image/Pasted image 20231122210415.png",
+    "07_02_ContainerOnAWS/image/Pasted image 20231122210206.png",
+    "07_02_ContainerOnAWS/image/Pasted image 20231122205846.png",
+    "07_02_ContainerOnAWS/image/Pasted image 20231122205819.png"
   ]
->>>>>>> Stashed changes
 }
