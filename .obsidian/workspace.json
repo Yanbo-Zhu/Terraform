@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "07_02_AWS实践/07_01_网络.md",
+                "file": "03_Terraform模块/03_02_引用模块.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "07_02_AWS实践/07_01_网络.md",
+                "file": "03_Terraform模块/03_02_引用模块.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "07_02_AWS实践/07_01_网络.md",
+                "file": "03_Terraform模块/03_02_引用模块.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "07_02_AWS实践/07_01_网络.md"
+                "file": "03_Terraform模块/03_02_引用模块.md"
               }
             }
           }
@@ -160,24 +160,29 @@
   },
   "active": "9337afe178b9eefa",
   "lastOpenFiles": [
-    "07_02_AWS实践/image/Pasted image 20231123181608.png",
-    "07_02_AWS实践/image/Pasted image 20231123181549.png",
-    "07_02_AWS实践/image/Pasted image 20231123180517.png",
-    "07_02_AWS实践/image/Pasted image 20231123180419.png",
-    "07_02_AWS实践/image/Pasted image 20231123180204.png",
-    "07_02_AWS实践/image/Pasted image 20231123180146.png",
-    "07_02_AWS实践/image/Pasted image 20231123175837.png",
-    "07_02_AWS实践/image/Pasted image 20231123175704.png",
-    "07_02_AWS实践/image/Pasted image 20231123174920.png",
-    "07_02_AWS实践/image/Pasted image 20231123174814.png",
-    "07_02_AWS实践/image/Pasted image 20231123172333.png",
+    "03_Terraform模块/03_01_创建模块.md",
+    "03_Terraform模块/03_02_引用模块.md",
+    "03_Terraform模块/image/Pasted image 20231124155356.png",
+    "03_Terraform模块/03_00_总览.md",
+    "03_Terraform模块/image/Pasted image 20231124150042.png",
+    "04_Terraform命令行/04_19_taint_标记某个Terraform管理的资源有污点.md",
+    "07_02_AWS实践/07_03_UserData_Provisioner.md",
+    "07_02_AWS实践/image/Pasted image 20231124144357.png",
+    "07_02_AWS实践/image/Pasted image 20231124144310.png",
+    "07_02_AWS实践/image/Pasted image 20231124144209.png",
+    "07_02_AWS实践/image/Pasted image 20231124144031.png",
+    "07_02_AWS实践/image/Pasted image 20231124143555.png",
+    "07_02_AWS实践/image/Pasted image 20231124143235.png",
+    "07_02_AWS实践/image/Pasted image 20231124143146.png",
+    "07_02_AWS实践/image/Pasted image 20231124142917.png",
+    "07_02_AWS实践/07_02_EC2.md",
+    "01_Terraform基础概念/01_04_provisioning_orchestrate.md",
+    "07_02_AWS实践/07_01_网络.md",
+    "07_02_AWS实践/07_00_总览.md",
     "07_02_ContainerOnAWS/07_02_AWSEKS.md",
     "07_02_ContainerOnAWS/07_11_Container_OnAWS.md",
-    "07_02_AWS实践/07_00_总览.md",
-    "07_02_AWS实践/07_01_网络.md",
     "07_02_AWS实践/image",
     "07_02_AWS实践",
-    "03_Terraform模块/03_07_例子_ECS+ALB_Module.md",
-    "03_Terraform模块/03_00_总览.md"
+    "03_Terraform模块/03_07_例子_ECS+ALB_Module.md"
   ]
 }
