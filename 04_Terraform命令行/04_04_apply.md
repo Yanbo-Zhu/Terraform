@@ -30,3 +30,6 @@ terraform apply [options] [dir-or-plan]
     - terraform apply -var "instance_name=YetAnotherName"
 - -var-file=foo：指定一个输入变量文件。具体内容我们在介绍输入变量的章节已有介绍，在此不再赘述
 
+常用的是 
+terraform apply -auto-approve
+
