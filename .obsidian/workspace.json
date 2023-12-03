@@ -14,7 +14,13 @@
               "type": "markdown",
               "state": {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 "file": "03_Terraform模块/03_02_引用模块.md",
+||||||| Stash base
+                "file": "07_02_AWS实践/07_01_网络.md",
+=======
+                "file": "04_Terraform命令行/04_13_output_提取状态文件中输出值的值.md",
+>>>>>>> Stashed changes
 ||||||| Stash base
                 "file": "07_02_AWS实践/07_01_网络.md",
 =======
@@ -92,7 +98,13 @@
               "type": "backlink",
               "state": {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 "file": "03_Terraform模块/03_02_引用模块.md",
+||||||| Stash base
+                "file": "07_02_AWS实践/07_01_网络.md",
+=======
+                "file": "04_Terraform命令行/04_13_output_提取状态文件中输出值的值.md",
+>>>>>>> Stashed changes
 ||||||| Stash base
                 "file": "07_02_AWS实践/07_01_网络.md",
 =======
@@ -115,7 +127,13 @@
               "type": "outgoing-link",
               "state": {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 "file": "03_Terraform模块/03_02_引用模块.md",
+||||||| Stash base
+                "file": "07_02_AWS实践/07_01_网络.md",
+=======
+                "file": "04_Terraform命令行/04_13_output_提取状态文件中输出值的值.md",
+>>>>>>> Stashed changes
 ||||||| Stash base
                 "file": "07_02_AWS实践/07_01_网络.md",
 =======
@@ -154,7 +172,13 @@
               "type": "outline",
               "state": {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 "file": "03_Terraform模块/03_02_引用模块.md"
+||||||| Stash base
+                "file": "07_02_AWS实践/07_01_网络.md"
+=======
+                "file": "04_Terraform命令行/04_13_output_提取状态文件中输出值的值.md"
+>>>>>>> Stashed changes
 ||||||| Stash base
                 "file": "07_02_AWS实践/07_01_网络.md"
 =======
@@ -185,6 +209,7 @@
   "active": "9337afe178b9eefa",
   "lastOpenFiles": [
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "03_Terraform模块/03_01_创建模块.md",
     "03_Terraform模块/03_02_引用模块.md",
     "03_Terraform模块/image/Pasted image 20231124155356.png",
@@ -205,6 +230,16 @@
     "07_02_AWS实践/07_01_网络.md",
     "07_02_AWS实践/07_00_总览.md",
 ||||||| Stash base
+||||||| Stash base
+=======
+    "04_Terraform命令行/04_18_state_执行修改tf状态文件.md",
+    "04_Terraform命令行/04_14_plan_创建变更计划.md",
+    "04_Terraform命令行/04_04_apply.md",
+    "04_Terraform命令行/04_13_output_提取状态文件中输出值的值.md",
+    "02_Terraform代码的书写/02_03_输入变量.md",
+    "04_Terraform命令行/04_17_show_状态文件或是变更计划文件中打印可读的输出信息.md",
+    "07_02_AWS实践/07_01_网络.md",
+>>>>>>> Stashed changes
     "07_02_AWS实践/image/Pasted image 20231123181608.png",
     "07_02_AWS实践/image/Pasted image 20231123181549.png",
     "07_02_AWS实践/image/Pasted image 20231123180517.png",
@@ -215,6 +250,7 @@
     "07_02_AWS实践/image/Pasted image 20231123175704.png",
     "07_02_AWS实践/image/Pasted image 20231123174920.png",
     "07_02_AWS实践/image/Pasted image 20231123174814.png",
+<<<<<<< Updated upstream
     "07_02_AWS实践/image/Pasted image 20231123172333.png",
 =======
     "04_Terraform命令行/04_18_state_执行修改tf状态文件.md",
@@ -235,14 +271,23 @@
     "07_02_AWS实践/image/Pasted image 20231123174920.png",
     "07_02_AWS实践/image/Pasted image 20231123174814.png",
 >>>>>>> Stashed changes
+||||||| Stash base
+    "07_02_AWS实践/image/Pasted image 20231123172333.png",
+=======
+>>>>>>> Stashed changes
     "07_02_ContainerOnAWS/07_02_AWSEKS.md",
     "07_02_ContainerOnAWS/07_11_Container_OnAWS.md",
 <<<<<<< Updated upstream
 ||||||| Stash base
     "07_02_AWS实践/07_00_总览.md",
+<<<<<<< Updated upstream
     "07_02_AWS实践/07_01_网络.md",
 =======
     "07_02_AWS实践/07_00_总览.md",
+>>>>>>> Stashed changes
+||||||| Stash base
+    "07_02_AWS实践/07_01_网络.md",
+=======
 >>>>>>> Stashed changes
     "07_02_AWS实践/image",
     "07_02_AWS实践",
