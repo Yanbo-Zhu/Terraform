@@ -1,5 +1,17 @@
 {
   "accentColor": "",
   "nativeMenus": true,
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "baseFontSize": 22
+||||||| Stash base
+  "baseFontSize": 14
+=======
+  "baseFontSize": 15
+>>>>>>> Stashed changes
+||||||| Stash base
+  "baseFontSize": 14
+=======
+  "baseFontSize": 15
+>>>>>>> Stashed changes
 }
