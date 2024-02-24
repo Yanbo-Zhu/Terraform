@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "2d58ecfe6ce1ef9f",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.8"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -160,7 +171,7 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "9337afe178b9eefa",
+  "active": "2d58ecfe6ce1ef9f",
   "lastOpenFiles": [
     "01_Terraform基础概念/01_02_状态管理.md",
     "00_总览/考试 HashiCorp Certified Terraform Associate.md",
