@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_Terraform基础概念/01_01_Provider.md",
+                "file": "02_Terraform代码的书写/02_00_总览_HCL语言.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01_Terraform基础概念/01_01_Provider.md",
+                "file": "02_Terraform代码的书写/02_00_总览_HCL语言.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01_Terraform基础概念/01_01_Provider.md",
+                "file": "02_Terraform代码的书写/02_00_总览_HCL语言.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01_Terraform基础概念/01_01_Provider.md"
+                "file": "02_Terraform代码的书写/02_00_总览_HCL语言.md"
               }
             }
           }
@@ -146,7 +146,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 271.5
+    "width": 326.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -160,22 +160,15 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "9337afe178b9eefa",
+  "active": "37697c9a8a5e963b",
   "lastOpenFiles": [
+    "01_Terraform基础概念/01_04_provisioning_orchestrate.md",
+    "01_Terraform基础概念/01_03_文件树形结构_ProjectStructure.md",
+    "01_Terraform基础概念/01_02_状态管理_理论.md",
     "01_Terraform基础概念/01_02_状态管理.md",
-    "00_总览/考试 HashiCorp Certified Terraform Associate.md",
-    "07_02_AWS实践/07_00_总览.md",
-    "07_02_AWS实践/07_01_网络.md",
-    "07_02_AWS实践/07_02_EC2.md",
+    "01_Terraform基础概念/01_00_核心概念.md",
+    "01_Terraform基础概念/01_01_Provider.md",
     "07_02_AWS实践/07_04_save_state_file_remotely.md",
-    "07_02_AWS实践/07_03_UserData_Provisioner.md",
-    "07_02_AWS实践/未命名",
-    "07_01_AWS实践/07_01_Creating_VPC.md",
-    "07_01_AWS实践/07_03_EBS_Volume.md",
-    "07_01_AWS实践/07_02_LanchEC2InstanceInVPC.md",
-    "00_总览/安装Terraform.md",
-    "00_总览/学习资料.md",
-    "00_总览/简介.md",
     "07_02_AWS实践/image/Pasted image 20231203142221.png",
     "07_02_AWS实践/image/Pasted image 20231203141947.png",
     "07_02_AWS实践/image/Pasted image 20231203141755.png",
@@ -187,13 +180,16 @@
     "03_Terraform模块/image/Pasted image 20231203135204.png",
     "03_Terraform模块/image/Pasted image 20231203135147.png",
     "03_Terraform模块/03_07_例子_ECS+ALB_Module.md",
+    "07_02_AWS实践/07_03_UserData_Provisioner.md",
     "03_Terraform模块/03_02_引用模块.md",
     "03_Terraform模块/03_01_创建模块.md",
     "03_Terraform模块/image/Pasted image 20231124155356.png",
     "03_Terraform模块/03_00_总览.md",
     "03_Terraform模块/image/Pasted image 20231124150042.png",
     "04_Terraform命令行/04_19_taint_标记某个Terraform管理的资源有污点.md",
-    "01_Terraform基础概念/01_04_provisioning_orchestrate.md",
+    "07_02_AWS实践/07_02_EC2.md",
+    "07_02_AWS实践/07_01_网络.md",
+    "07_02_AWS实践/07_00_总览.md",
     "07_02_ContainerOnAWS/07_02_AWSEKS.md",
     "07_02_ContainerOnAWS/07_11_Container_OnAWS.md",
     "07_02_AWS实践/image",
