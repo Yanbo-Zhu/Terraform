@@ -70,8 +70,44 @@ $ terraform-docs -c /path/to/parent/folder/.terraform-docs.yml .
 
 ```
 
+# 2 再指定的 outputfile 中 写入其他内容
 
-# 2 .terraform-docs.yml 中的内容 
+
+比如再 被指定的 outputfile  README.md 中 手写了一些其他的东西， 
+
+其中加入了 
+
+```
+<!-- BEGIN_TF_DOCS -->
+<!-- END_TF_DOCS -->
+
+```
+
+在运行 terraform-docs -c .terraform-docs.yml . 之后 ，  .terraform-docs.yml 定义的内容 会自动插入到 `<!-- BEGIN_TF_DOCS -->` and `<!-- END_TF_DOCS -->` 之间 并不会影响到其他的内容 
+
+
+```
+# terraform-mymodule
+
+Describe in one sentence what this module does
+
+<!-- BEGIN_TF_DOCS -->
+<!-- END_TF_DOCS -->
+
+## 2.1 Development
+
+### 2.1.1 Development Requirements
+
+- access to git.ivu-ag.com and the Terraform repositories
+- access to what you want to manage with Terraform (like, AWS, Vault, Artifactory, ...)
+- terraform ([-> installation instructions](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli))
+- terraform-docs ([-> installation instructions](https://terraform-docs.io/user-guide/installation))
+- git ([-> installation instruction](https://github.com/git-guides/install-git))
+
+```
+
+
+# 3 .terraform-docs.yml 中的内容 
 
 ```yaml
 formatter: "" # this is required
@@ -127,7 +163,7 @@ settings:
 ```
 
 
-## 2.1 output
+## 3.1 output
 
 ```yaml
 output:
@@ -140,7 +176,7 @@ output:
 ```
 
 
-## 2.2 formatter 
+## 3.2 formatter 
 
 The following options are supported out of the box by terraform-docs and can be used for `FORMATTER_NAME`:
 
@@ -163,7 +199,7 @@ The following options are supported out of the box by terraform-docs and can be 
 常用 markdown 
 
 
-## 2.3 Content 
+## 3.3 Content 
 
 https://terraform-docs.io/user-guide/configuration/content/
 
