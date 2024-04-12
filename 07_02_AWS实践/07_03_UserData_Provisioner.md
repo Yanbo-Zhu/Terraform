@@ -54,16 +54,22 @@ self 指的是  当前所在的 resource 块 的 resource 本身
 
 ## 2.3 remote-exec 
 
+"The remote-exec provisioner invokes a script on a remote resource after it is created."
+The remote-exec provisioner invokes a script on a remote resource created by Terraform. It connects to the resource using SSH or WinRM and run the provided inline or script commands.
+
 ![](image/Pasted%20image%2020231124142718.png)
 
 
 ## 2.4 file 
+
+The file rovisioner is used to co files or directories from the machine executin Terraform to the newl created resource.
 
 ![](image/Pasted%20image%2020231124142917.png)
 
 
 ## 2.5 local-exec
 
+The local-exec provisioner invokes a local executable after a resource is created. This invokes a process on the machine running Terraform, not on the resource. (this is from the terraform web site)
 ![](image/Pasted%20image%2020231124143555.png)
 
 

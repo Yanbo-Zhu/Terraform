@@ -110,3 +110,5 @@ https://developer.hashicorp.com/terraform/tutorials/certification-003?ajs_aid=c4
 https://developer.hashicorp.com/terraform/tutorials/certification-003/associate-study-003
 
 
+
+
