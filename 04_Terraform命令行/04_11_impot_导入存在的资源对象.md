@@ -81,3 +81,21 @@ $ terraform import 'aws_instance.baz[\"example\"]' i-abcd1234
 $ terraform import aws_instance.baz[\"example\"] i-abcd1234
 ```
 
+
+## 1.4 example 2 
+
+You have provisioned some virtual machines (VMs) on Google Cloud Platform (GCP) using the gcloud command line tool. However, you are
+standardizing with Terraform and want to manage these VMS using Terraform instead.
+What are the two things you must do to achieve this? (Choose two.)
+
+B. Use the terraform import command for the existing VMS
+C. Write Terraform configuration for the existing VMS
+
+
+B. Use the terraform import command for the existing VMs. This command allows you to import existing infrastructure into your Terraform state fil
+so that Terraform can manage it. You will need to provide the resource type and name, along with any required attributes, for each VM you want
+import.
+C. Write Terraform configuration for the existing VMs. Once the VMS have been imported into the Terraform state file, you will need to write
+configuration code that describes the desired state of the VMs. This will typically involve creating a new Terraform module or modifying an existing
+one to include the imported resources.
+

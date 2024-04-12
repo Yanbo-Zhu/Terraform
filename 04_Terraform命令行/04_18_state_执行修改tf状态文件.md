@@ -223,6 +223,8 @@ $ terraform state replace-provider hashicorp/aws registry.acme.corp/acme/aws
 
 terraform state rm命令可以用来从状态文件中删除对象。该命令可以删除单个资源、多实例资源中特定实例、整个模块以及等等。
 
+==Option C is also incorrect, as running terraform state rm * will remove all resources from the Terraform state file, effectively "forgetting" about them and making it impossible to manage them with Terraform.== 并没有 实际删除 这个 对象 
+
 ## 7.1 用法
 
 terraform state rm [options] ADDRESS...

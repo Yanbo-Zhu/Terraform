@@ -6,7 +6,16 @@ terraform workspace命令可以用来管理当前使用的工作区。我们在�
 
 该命令包含一系列子命令，我们将会一一介绍。
 
+terraform workspace -help
+Usage: terraform [global options] workspace
+new, list, show, select and delete Terraform workspaces.
 
+Subcommands:
+delete Delete a workspace
+list List Workspaces
+new Create a new workspace
+select Select a workspace
+show Show the name of the current workspace
 # 1 list
 
 terraform workspace list命令列出当前存在的工作区。
