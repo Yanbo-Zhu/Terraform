@@ -82,7 +82,21 @@ $ terraform import aws_instance.baz[\"example\"] i-abcd1234
 ```
 
 
-## 1.4 example 2 
+# 2 terraform import  只输入state
+
+terraform import  只输入state, 还需要自己 手写 resource configuration block 
+
+"The current implementation of Terraform import can only import resources into the state. It does not generate configuration. A future version of Terraform will also generate configuration.
+Because of this, prior to running terraform import it is necessary to write manually a resource configuration block for the resource, to which the imported object will be mapped.
+
+
+Import will find the existing resource from ID and import it into your Terraform state at the given ADDRESS.
+- ADDRESS must be a valid resource address. Because any resource address is valid, the import command can import resources into modules as well as directly into the root of your state.
+- ID is dependent on the resource type being imported. If the ID is invalid, you'll just receive an error message.
+
+Warning: Terraform expects that each remote object it is managing will be bound to only one resource address, which is normally guaranteed b Terraform itself having created all objects. If you import existing objects into Terraform, be careful to import each remote object to only one Terraform resource address. If you import the same object multiple times, Terraform may exhibit unwanted behavior.
+
+# 3 example 2 
 
 You have provisioned some virtual machines (VMs) on Google Cloud Platform (GCP) using the gcloud command line tool. However, you are
 standardizing with Terraform and want to manage these VMS using Terraform instead.

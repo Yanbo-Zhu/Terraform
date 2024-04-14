@@ -243,4 +243,28 @@ data "ucloud_images" "default" {
 假如代码中所有显式声明的provider都有别名，那么Terraform运行时会构造一个所有配置均为空值的默认provider。假如provider有必填字段，并且又有资源使用了默认provider，那么Terraform会抛出一个错误，抱怨默认provider缺失了必填字段。
 
 
+# 6 Version
 
+
+You need to constrain the GitHub provider to version 2.1 or greater.
+
+
+
+in 0.12 terraform version
+version = "<=2.1",   version = ">=2.1"
+
+in 0.13 or later terraform version
+version ~> 2.1
+
+
+A- version >= 2.1 (不对的)
+This option is not valid in Terraform's provider block. Terraform uses a specific version string format to specify provider versions, and this format is not compatible with the operator.
+
+B- version ~> 2.1 (terraform version > 0.13 的做法)
+This option uses a version constraint that allows Terraform to use any version that is compatible with version 2.1, but it does not enforce using version 2.1 or greater. The N > operator specifies that it should use a version greater than or equal to 2.1 but less than the next major version.
+
+C- version = "<=2.1"
+This option constrains the provider to versions less than or eq al to 2.1, which is the opposite of what you want. It limits Terraform to use versions up to and including 2.1 but not greater.
+
+D- version = ">=2.1"
+This option correctly specifies that Terraform should use the GitHub provider version 2.1 or any version greater than 2.1, which matches your requirement of constraining it to version 2.1 or greater.
