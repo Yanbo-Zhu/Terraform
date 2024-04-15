@@ -11,6 +11,25 @@ validate命令需要已初始化的工作目录，所有引用的插件与模块
 $ terraform init -backend=false
 ```
 
+---
+
+http://man.hubwiz.com/docset/Terraform.docset/Contents/Resources/Documents/docs/commands/validate.html
+The terraform validate command is used to validate the syntax of the terraform files. Terraform performs a syntax check on all the
+terraform files in the directory, and will display an error if any of the files doesn't validate.
+This command does not check formatting (e.g. tabs vs spaces, newlines, comments etc.).
+
+The following can be reported:
+• invalid HCL syntax (e.g. missing trailing quote or equal sign)
+• invalid HCL references (e.g. variable name or attribute which doesn't exist)
+• same provider declared multiple times
+• same module declared multiple times
+• same resource declared multiple times
+• invalid module name
+• interpolation used in places where it's unsupported (e.g. variable , depends _ on, module. source , provider )
+• missing value for a variable (none of -var foo=. flag, -var-file=foo.vars flag, TF VAR_foo environment variable,
+terraform. tfvars , or default value in the configuration)
+
+
 ## 1.1 用法
 
 terraform validate [options] [dir]

@@ -33,3 +33,60 @@ terraform apply [options] [dir-or-plan]
 常用的是 
 terraform apply -auto-approve
 
+
+plan v reads the current state of any already-existing remote objects to MAKE SURE that the Terraform state is up-to-date.
+- -refresh-onlf - creates a plan whose goal is ONLY to update the Terraform state and any root module output values to match changes made to remote objects outside of Terraform.
+- -refresh=false - disables the DEFAULT behavior of synchronizing the Terraform state with remote objects before checking for configuration changes.
+
+# 2 Terraform apply 到底在干什么
+
+A is correct answer : Validates your expectations against the execution plan without permanently modifying state
+"The terraform plan command creates an execution plan, which lets you preview the changes that Terraform plans to make to your infrastructure.
+
+Terraform's plan command is used to create an execution plan that outlines the steps that Terraform will take to reach your desired infrastructure state. It allows you to preview and validate the changes that will be made to your infrastructure before actually making those changes. This can be helpful in the development process because it allows you to see exactly what will be changed and ensure that it aligns with your expectations before you apply those changes.
+
+By default, when Terraform creates a plan it:
+- Reads the current state of any already-existing remote objects to make sure that the Terraform state is up-to-date.
+- Compares the current configuration to the prior state and noting any differences.
+- Proposes a set of change actions that should, if applied, make the remote objects match the configuration.
+- The plan command alone will not actually carry out the proposed changes, and so you can use this command to check whether the proposed changes match what you expected before you apply the changes or share your changes with your team for broader review.
+
+If Terraform detects that no changes are needed to resource instances or to root module output values, terraform plan will report that no actions
+need to be taken."
+
+# 3 When does terraform apply reflect changes in the cloud environment
+
+1. When you execute terraform apply, Terraform creates a new execution plan by comparing the current state file to the desired state declared in the configuration. 
+    1. 比较current state in local state 和 真实的state in cloud. 创造 execution plan
+2. After creating the execution plan, Terraform presents the proposed changes and asks for confirmation to apply them. 
+3. Once you confirm the changes, Terraform updates the state file with the new state reflecting the changes that were made. 
+    1. 更新 local state file 
+4. Terraform then submits the chang requests to the resource provider to make the desired changes in the cloud environment. The amount of time it takes for the resource provider to fulfill the requests can vary depending on the resources being modified.
+    1.  向 cloud 端 提出 更改云资源的申请
+
+
+When you apply this configuration, Terraform will:
+1) Lock your project's state
+2) Create a plan, and wait for you to approve it.
+3) Execute the steps defined in the plan using the providers you installed when you initialized your configuration. Terraform executes steps in parallel when possible, and sequentially when one resource depends on another.
+4) Update your project's state file with a snapshot of the current state of your resources.
+5) Unlock the state file.
+6) Print out a report of the changes it made, as well as any output values defined in your configuration.
+
+
+
+# 4 手动删除resource 后, 再次运行terraform apply 
+
+D. Terraform will recreate the VM
+
+When you delete a resource like a VM directly through the cloud provider's console (outside of Terraform), the Terraform state file still believes the resource exists, as it's unaware of any changes made outside its management. The next time you run terraform apply, Terraform compares the desired state (defined in your Terraform configuration) with the actual state (as recorded in the state file and observed in the cloud environment).
+
+Since the actual VM no longer exists but your Terraform configuration still defines it, Terraform detects this discrepancy and takes action to reconcile the difference by creating a new VM to match the desired state defined in your Terraform configuration. Terraform's goal is always to make the real-world infrastructure match the configuration.
+
+
+- It refresh the state, which detects that the storage account was gone
+- Then it re-creates storage account with the same name but without the data from previous instance
+
+
+
+

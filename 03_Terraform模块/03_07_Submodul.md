@@ -1,4 +1,16 @@
 
+
+
+# 1 总览 
+
+## 1.1 variables inheritance
+
+==Modules do not inherit variables from the parent module. ==
+All modules are self-contained units. So you have to explicitly define variables in the child module, and then explicit set these variables in the parent module, when you instantiate the child module.
+Module variable assignments must be explicitly set by the parent module when it instantiates the child module.
+
+# 2 用其他方式来代替 submodul 
+
 https://stackoverflow.com/questions/66873794/how-to-create-terraform-sub-module
 
 it would be good to create composable modules rather than submodules.

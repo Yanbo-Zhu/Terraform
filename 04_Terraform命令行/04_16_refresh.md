@@ -1,6 +1,8 @@
 
 # 1 refresh
 
+"The terraform refresh command reads the current settings from all managed remote objects and updates the Terraform state to match.
+
 terraform refresh命令将实际存在的基础设施对象的状态同步到状态文件中记录的对象状态。它可以用来检测真实状态与记录状态之间的漂移并更新状态文件。
 
 > 警告！！！该命令已在最新版本 Terraform 中被废弃，因为该命令的默认行为在当前用户错误配置了使用的云平台令牌时会引发对状态文件错误的变更。
@@ -26,3 +28,13 @@ terraform refresh [options] [dir]
 该命令将会在交互界面中提示用户检测到的变更，并提示用户确认执行。
 
 `terraform apply`和`terraform plan`命令的`-refresh-only`选项是从 Terraform v0.15.4 版本开始被引入的。对更早的版本，用户只能直接使用`terraform refresh`命令，同时要小心本篇警告过的危险副作用。尽可能避免显式使用`terraform refresh`命令，Terraform 在执行`terraform plan`和`terraform apply`命令时都会自动执行刷新状态的操作以生成变更计划，尽可能依赖该机制来维持状态文件的同步。
+
+
+
+# 2 What is terraform refresh intended to detect?
+
+C. State file drift.
+The terraform refresh command is used to reconcile the state Terraform has stored in the state file with the real-world infrastructure. When you run terraform apply, Terraform updates the state file to reflect the current state of the infrastructure it manages. However, if changes are made to the infrastructure outside of Terraform, such as via the web console or API, the state file will become out-of-date and will not accurately reflect the current state of the infrastructure.
+
+Terraform refresh is intended to detect state file drift. It updates the Terraform state file with the real-world state of the resources being managed, which allows Terraform to detect any changes that might have been made outside of Terraform. This is useful when the state file is out of sync with the actual resources in the cloud provider, which can happen if someone manually modifies a resource outside of Terraform. By running terraform refresh, Terraform can identify those differences and update the state file to reflect the real-world state of the resources being managed.
+

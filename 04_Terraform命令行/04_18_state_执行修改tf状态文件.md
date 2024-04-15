@@ -225,6 +225,8 @@ terraform state rm命令可以用来从状态文件中删除对象。该命令�
 
 ==Option C is also incorrect, as running terraform state rm * will remove all resources from the Terraform state file, effectively "forgetting" about them and making it impossible to manage them with Terraform.== 并没有 实际删除 这个 对象 
 
+"You can use terraform state rm in the less common situation where you wish to remove a binding to an existing remote object without first destroying it, which will effectively make Terraform "forget" the object while it continues to exist in the remote system."
+
 ## 7.1 用法
 
 terraform state rm [options] ADDRESS...
