@@ -8,3 +8,8 @@ We recommend configuring VCS access when first setting up an organization, and y
 How can you trigger a run in a Terraform Cloud workspace that is connected to a Version Control System (VCS) repository?
 C. Only members of a VCS organization can open a pull request against repositories that are connected to Terraform Cloud workspaces
 
+# 1 不同的 support plan
+
+Terraform Cloud is a commercial SaaS product developed by HashiCorp. Many of its features are free for small teams, including remote state storage, remote runs, and VCS connections. We also offer paid plans for larger teams that include additional collaboration and governance features.
+Each higher paid upgrade plan is a strict superset of any lower plans - for example, the Team & Governance plan includes all of the features of this Team plan.
+

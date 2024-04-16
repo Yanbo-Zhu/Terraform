@@ -91,9 +91,13 @@ module.elb.aws_security_group.sg
 terraform state mv命令可以在状态文件中移动资源。该命令可以移动单个资源对象、多实例资源对象中特定实例、整个模块以及其他对象。
 该命令也可以在不同的状态文件之间移动对象，以配合代码重构。
 
+The terraform state mv command changes which resource address in your configuration is associated with a particular real-world object. Use this to preserve an object when renaming a resource, or when moving a resource into or out of a child module.
+
 ## 3.1 用法
 
 terraform state mv [options] SOURCE DESTINATION
+
+`terraform state mv [options] <old_name> <new_name>`
 
 该命令将会把资源对象从SOURCE地址移动到DESTINATION地址。这可以用来实现单个简单资源的重命名、在模块之间移动对象、移动整个模块等操作。它也可以用来在Terraform管理的不同基础设施栈之间移动对象。
 
@@ -113,6 +117,13 @@ terraform state mv [options] SOURCE DESTINATION
 ```
 $ terraform state mv 'packet_device.worker' 'packet_device.helper'
 ```
+---
+
+You have modified your Terraform configuration to fix a typo in the Terraform ID of a resource from aws_security_group.htp to aws_security_group.http
+
+`terraform state mv aws_security_group.htp aws_security_group.http`
+
+![](images/Pasted%20image%2020240416193008.png)
 
 ## 3.3 例子：将一个资源移动进一个模块
 
@@ -181,6 +192,8 @@ terraform push命令被用来手动上传本地状态文件到远程Backend。�
 ## 5.1 用法
 
 terraform state push [options] PATH
+
+"The terraform push command was an early implementation of remote Terraform runs. It allowed teams to push a configuration to a remote run environment in a discontinued version of Terraform Enterprise."
 
 该命令会把PATH位置的状态文件推送到当前使用的Backend上(可以是当前使用的terraform.tfstate文件)。
 

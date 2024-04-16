@@ -138,6 +138,18 @@ Terraform会检查当前工作环境或是插件缓存中是否存在满足版�
 可以用添加后缀的方式来声明预览版，例如：`1.2.0-beta`。预览版只能通过"="操作符(或是空缺操作符)后接明确的版本号的方式来指定，不可以与`>=`、`~>`等搭配使用。
 推荐使用">="操作符约束最低版本。如果你是在编写旨在由他人复用的模块代码时，请避免使用"~>"操作符，即使你知道模块代码与新版本插件会有不兼容。
 
+if it was asking for "required_providers" then they would need to nested inside a terraform block however none of the examples show the correct syntax for a required_providers block
+```
+terraform {
+    required_providers {
+        mycloud = {
+        source = "mycorp/mycloud"
+        version ="~> 1.0"
+        }
+    }
+}    
+```
+
 
 # 4 内建Provider
 
@@ -248,20 +260,21 @@ data "ucloud_images" "default" {
 
 You need to constrain the GitHub provider to version 2.1 or greater.
 
-
-
 in 0.12 terraform version
 version = "<=2.1",   version = ">=2.1"
 
 in 0.13 or later terraform version
 version ~> 2.1
 
-
 A- version >= 2.1 (不对的)
 This option is not valid in Terraform's provider block. Terraform uses a specific version string format to specify provider versions, and this format is not compatible with the operator.
 
 B- version ~> 2.1 (terraform version > 0.13 的做法)
-This option uses a version constraint that allows Terraform to use any version that is compatible with version 2.1, but it does not enforce using version 2.1 or greater. The N > operator specifies that it should use a version greater than or equal to 2.1 but less than the next major version.
+This option uses a version constraint that allows Terraform to use any version that is compatible with version 2.1, but it does not enforce using version 2.1 or 2.1.0 to 2.1.10, but not 2.2 . The N > operator specifies that it should use a version greater than or equal to 2.1 but less than the next major version.
+
+~>: Allows only the rightmost version component to increment. For example, to allow new patch releases within a specific minor release, use the full version number: ~> 1.0.4 will allow installation of 1.0.5 and 1.0.10 but not 1.1.0. This is usually called the pessimistic constraint operator.
+The ~> operator is a convenient shorthand for allowing the rightmost component of a version to increment.
+The version constraint " ~> 3.0" specifies that the required version of the AWS provider should be at least 3.0 but less than 4.0. The operator if used for optimistic version constraints and allows any version greater than or equal to the specified minimum version but less than the next major release.
 
 C- version = "<=2.1"
 This option constrains the provider to versions less than or eq al to 2.1, which is the opposite of what you want. It limits Terraform to use versions up to and including 2.1 but not greater.

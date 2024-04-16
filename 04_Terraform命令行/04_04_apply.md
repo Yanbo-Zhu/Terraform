@@ -1,5 +1,4 @@
 
-
 # 1 apply
 
 Terraform最重要的命令就是apply。apply命令被用来生成执行计划(可选)并执行之，使得基础设施资源状态符合代码的描述。
@@ -29,14 +28,17 @@ terraform apply [options] [dir-or-plan]
 - -var 'foo=bar'：设置一组输入变量的值。该参数可以反复设置以传入多个输入变量值
     - terraform apply -var "instance_name=YetAnotherName"
 - -var-file=foo：指定一个输入变量文件。具体内容我们在介绍输入变量的章节已有介绍，在此不再赘述
-
-常用的是 
-terraform apply -auto-approve
+- -destroy: 只破坏 不重建 
 
 
 plan v reads the current state of any already-existing remote objects to MAKE SURE that the Terraform state is up-to-date.
 - -refresh-onlf - creates a plan whose goal is ONLY to update the Terraform state and any root module output values to match changes made to remote objects outside of Terraform.
 - -refresh=false - disables the DEFAULT behavior of synchronizing the Terraform state with remote objects before checking for configuration changes.
+
+
+常用的是 
+terraform apply -auto-approve
+terraform apply -destroy
 
 # 2 Terraform apply 到底在干什么
 
