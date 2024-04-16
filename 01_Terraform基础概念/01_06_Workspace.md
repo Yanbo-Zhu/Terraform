@@ -259,4 +259,23 @@ Terraform Plan 之后， 该目录下会生产terraform.tfstate 文件，用以�
 Prod 环境下的 ES hot 节点状态：
 ![](images/8f4e930305334c04bd0328f48a703ec9.png)
 
+# 5 the safest way to inject sensitive values
+
+Which of the following is the safest way to inject sensitive values into a Terraform Cloud workspape?
+A. Write the value to a file and specify the file with the -var-file flag
+B. Set a value for the variable in the Ul and check the "Sensitive" check box
+C. Edit the state file directly just before running terraform apply
+D. Set the variable value on the command line with the -var flag
+
+选 B
+B. Set a value for the variable in the Ul and check the "Sensitive" check box.
+When working with Terraform Cloud workspaces, the safest way to inject sensitive values into a Terraform Cloud workspace is to set a value for the variable in the Ul and check the "Sensitive" check box. This will ensure that the value is stored securely and not visible in plain text in the Terraform Cloud Ul or API.
+
+B. Set a value for the variable in the Ul and check the "Sensitive" check box is the safest way to inject sensitive values into a Terraform Cloud workspace. This ensures that the sensitive values are securely stored and encrypted in the workspace, and are not visible in the Terraform logs or state file. Writing the value to a file or setting the variable value on the command line can expose the sensitive data to unauthorized access, and editing the state file directly is not a recommended practice and can potentially corrupt the state.
+
+Option A, writing the value to a file and specifying the file with the -var-file flag, may be less secure because the file could potentially be accessed by unauthorized users.
+
+Option C, editing the state file directly just before running terraform apply, is not a best practice and could result in data loss or corruption.
+
+Option D, setting the variable value on the command line with the -var flag, could result in the sensitive value being stored in plain text in the command history or other logs, which could be accessed by unauthorized users.
 

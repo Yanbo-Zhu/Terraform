@@ -9,7 +9,8 @@ terraform import命令用来将已经存在的资源对象导入Terraform。
 
 ## 1.1 用法
 
-terraform import [options] ADDRESS ID
+`terraform import [options] ADDRESS ID`
+`terraform import <resource address> <resource id>`
 
 terraform import会根据资源ID找到相应资源，并将其信息导入到状态文件中ADDRESS对应的资源上。ADDRESS必须符合我们在资源地址中描述的合法资源地址格式，这样terraform import不但可以把资源导入到根模块中，也可以导入到子模块中。
 
