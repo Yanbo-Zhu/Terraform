@@ -281,3 +281,22 @@ This option constrains the provider to versions less than or eq al to 2.1, which
 
 D- version = ">=2.1"
 This option correctly specifies that Terraform should use the GitHub provider version 2.1 or any version greater than 2.1, which matches your requirement of constraining it to version 2.1 or greater.
+
+
+---
+Module 的 version 给入
+
+If the source is from terrform registry then we can use `version = "1.0.0"`
+when using git as the source we have to use `?ref=1.0.0 `the exact git path givin in the question is given in this terraform official documentation ( for example `git::https://exa mple.com/vpc.git?ref=1.0.0`  )
+
+```
+
+Example:
+module "consul" {
+    source = "hashicorp/consul/aws"
+    version = '0.0.5'
+    servers = 3
+}
+```
+
+

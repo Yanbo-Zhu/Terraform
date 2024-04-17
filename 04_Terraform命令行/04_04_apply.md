@@ -32,9 +32,10 @@ terraform apply [options] [dir-or-plan]
 
 
 plan v reads the current state of any already-existing remote objects to MAKE SURE that the Terraform state is up-to-date.
-- -refresh-onlf - creates a plan whose goal is ONLY to update the Terraform state and any root module output values to match changes made to remote objects outside of Terraform.
+- -refresh-only 
+    - creates a plan whose goal is ONLY to update the Terraform state and any root module output values to match changes made to remote objects outside of Terraform.
+    - 执行 terraform apply -refresh-only 后output message: Would you like to update the Terraform state to reflect these detected changes? Terraform will write these changes to the state without modifying any real infrastructure. There is no undo. Only 'yes' will be accepted to confirm. Enter a value: yes
 - -refresh=false - disables the DEFAULT behavior of synchronizing the Terraform state with remote objects before checking for configuration changes.
-
 
 常用的是 
 terraform apply -auto-approve
@@ -56,14 +57,17 @@ By default, when Terraform creates a plan it:
 If Terraform detects that no changes are needed to resource instances or to root module output values, terraform plan will report that no actions
 need to be taken."
 
-# 3 When does terraform apply reflect changes in the cloud environment
+# 3 When does terraform apply reflect changes in the cloud environment and update the local state-file
 
-1. When you execute terraform apply, Terraform creates a new execution plan by comparing the current state file to the desired state declared in the configuration. 
+==Terraform plan and apply operations run an implicit in-memory refresh as part of their functionality, reconciling any drift from your state file suggesting infrastructure changes.==
+
+1. Reads the current state of any already-existing remote objects to make sure that the Terraform state is up-to-date.
+2. When you execute terraform apply, Terraform creates a new execution plan by comparing the current state file (which is already synchronized  with the actual state of the Infrastructure  in the cloud environment )  to the desired state declared in the configuration. 
     1. 比较current state in local state 和 真实的state in cloud. 创造 execution plan
-2. After creating the execution plan, Terraform presents the proposed changes and asks for confirmation to apply them. 
-3. Once you confirm the changes, Terraform updates the state file with the new state reflecting the changes that were made. 
+3. After creating the execution plan, Terraform presents the proposed changes and asks for confirmation to apply them. 
+4. Once you confirm the changes, Terraform updates the state file with the new state reflecting the changes that were made. 
     1. 更新 local state file 
-4. Terraform then submits the chang requests to the resource provider to make the desired changes in the cloud environment. The amount of time it takes for the resource provider to fulfill the requests can vary depending on the resources being modified.
+5. Terraform then submits the chang requests to the resource provider to make the desired changes in the cloud environment. The amount of time it takes for the resource provider to fulfill the requests can vary depending on the resources being modified.
     1.  向 cloud 端 提出 更改云资源的申请
 
 
