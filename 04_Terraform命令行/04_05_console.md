@@ -3,6 +3,8 @@
 
 有时我们想要一个安全的调试工具来帮助我们确认某个表达式是否合法，或者表达式的值是否符合预期，这时我们可以使用terraform console启动一个交互式控制台。
 
+lets you experiment with Terraform's built-in functions
+
 ## 1.1 用法
 
 terraform console [options] [dir]

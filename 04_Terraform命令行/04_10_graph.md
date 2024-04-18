@@ -7,6 +7,9 @@
 
 terraform graph命令可以用来生成代码描述的基础设施或是执行计划的可视化图形。它的输出是DOT格式，可以使用[GraphViz](http://www.graphviz.org/)来生成图片，也有许多网络服务可以读取这种格式。
 
+run to generate DOT (Document Template) formatted data to visualize Terraform dependencies
+The terraform graph command is used to generate a visual representation of either a configuration or execution plan. The output is in the DOT format, which can be used by GraphViz to generate charts.
+
 ## 2.1 用法
 
 terraform graph [options] [DIR]

@@ -20,7 +20,7 @@ https://developer.hashicorp.com/certifications/infrastructure-automation
 - https://developer.hashicorp.com/terraform/tutorials/certification-003/associate-study-003
 
 帖子
-- https://zhuanlan.zhihu.com/p/342735423
+- https://zhuanlan.zhihu.com/p/342735423  
 - https://easterfan.github.io/2023/07/10/%E5%87%BA%E4%BA%8E%E8%BF%B7%E8%8C%AB,-%E6%88%91%E5%8E%BB%E8%80%83%E4%BA%86Terraform-Associate.html
 - https://zhuanlan.zhihu.com/p/342735423
 
@@ -28,6 +28,7 @@ https://developer.hashicorp.com/certifications/infrastructure-automation
 Mock Exam
 - Udemy 上面有 , 300  题 https://www.terraform-best-practices.com/
 - https://medium.com/bb-tutorials-and-thoughts/250-practice-questions-for-terraform-associate-certification-7a3ccebe6a1a
+- https://zhuanlan.zhihu.com/p/342735423   上面 有 腾讯微云的链接. 有150个 模拟题 
 
 
 # 2 细则
