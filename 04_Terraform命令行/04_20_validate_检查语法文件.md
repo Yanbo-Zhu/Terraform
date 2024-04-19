@@ -1,6 +1,8 @@
 
 # 1 validate
 
+The terraform validate command checks the syntax and validates the configuration files in a Terraform module. It does not check for configuration consistency errors like differences between local and remote state or outdated module versions.
+
 terraform validate命令可以检查目录下Terraform代码，只检查语法文件，不会访问诸如远程Backend、Provider的API等远程资源。
 
 validate检查代码的语法是否合法以及一致，不管输入变量以及现存状态。
