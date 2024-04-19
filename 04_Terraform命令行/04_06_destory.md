@@ -4,6 +4,8 @@
 
 terraform destroy命令可以用来销毁并回收所有Terraform管理的基础设施资源。
 
+Terraform destroy is a command used to destroy all the infrastructure resources that are defined in the Terraform configuration file. This command removes all resources created by the Terraform configuration and deletes them from the infrastructure provider, effectively tearing down the entire infrastructure that was created using Terraform. The command operates on the Terraform state file, which is used to track the current state of the infrastructure. When the command is executed, it removes all resources in the state file and makes the infrastructure match the desired state of having no resources.
+
 ## 1.1 用法
 
 terraform destroy [options] [dir]
