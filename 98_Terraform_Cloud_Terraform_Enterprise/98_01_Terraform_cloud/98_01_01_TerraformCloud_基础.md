@@ -18,7 +18,7 @@ Each higher paid upgrade plan is a strict superset of any lower plans - for exam
 
 In a Terraform Cloud workspace linked to a version control repository, speculative plan runs start automatically when you merge or commit changes to version control.
 
-It is true because Terraform Cloud can monitor the linked version control repository for changes and automatically trigger a speculative plan run into response to each commit or merge. This allows users to quickly see the expected changes that would result from the proposed change, without actually applying those changes. Speculative plan runs can be a useful tool for catching errors early in the development process and avoiding potentially costly mistakes.
+It is true because Terraform Cloud can monitor the linked version control repository for changes and automatically ==trigger a speculative plan run into response to each commit or merge==. This allows users to quickly see the expected changes that would result from the proposed change, without actually applying those changes. Speculative plan runs can be a useful tool for catching errors early in the development process and avoiding potentially costly mistakes.
 
 Whether to perform speculative plans on pull requests to the connected repository, to assist in reviewing proposed changes. Automatic speculativ plans are enabled by default, but you can disable them for any workspace.
 
@@ -30,11 +30,12 @@ B. Remote state management
 D. Private module registry
 VCS Integration
 They can securely store cloud credentials
-
+A web-based user interface
+Remote state storage
 
 不是免费的, 但是可以用 feature is not included in Terraform Cloud's free tier?
 C. Audit logging
-B  roles and team management
+B  roles and team management and governance
 
 
 根本就不提供使用 
@@ -52,8 +53,6 @@ C. Automatic backups
 D. Automated infrastructure deployment visualization
 
 ---
-
-
 
 Which of these statements about Terraform Cloud workspaces is false? C 
 A. They can securely store cloud credentials
