@@ -129,3 +129,8 @@ $ terraform workspace show
 development
 ```
 
+
+
+# 6 没有 switch 
+
+没有  terraform workspace switch dev 这样的用法

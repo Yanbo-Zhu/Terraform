@@ -54,6 +54,8 @@ self 指的是  当前所在的 resource 块 的 resource 本身
 
 ## 2.3 remote-exec 
 
+connection types are supported by the remote-exec provisioner: ssh and winrm 
+
 "The remote-exec provisioner invokes a script on a remote resource after it is created."
 The remote-exec provisioner invokes a script on a remote resource created by Terraform. It connects to the resource using SSH or WinRM and run the provided inline or script commands.
 

@@ -9,6 +9,15 @@ terraform state命令可以用来进行复杂的状态管理操作。随着你�
 
 terraform state \ [options] [args]
 
+The terraform state command can be used to ____ 
+A. modify state 
+B. view state 
+C. refresh state 
+D. There is no such command
+
+选A
+The `terraform state` command is used for advanced state management. Rather than modify the state directly, the terraform state commands can be used in many cases instead.
+
 ## 1.2 远程状态
 
 所有的state子命令都可以搭配本地状态文件以及远程状态使用。使用远程状态时读写操作可能用时稍长，因为读写都要通过网络完成。备份文件仍然会被写入本地磁盘。
@@ -31,11 +40,82 @@ state子命令的输出以及命令结构都被设计成易于同Unix下其他�
 
 state子命令中大量使用了资源地址，我们在资源地址章节中做了相关的介绍。
 
-# 2 terraform state list
+
+# 2 terraform state show_展示状态文件中单个资源的属性
+
+terraform state show命令可以展示状态文件中单个资源的属性。
+
+terraform state show : command is used to show details and attributes of a resource managed by Terraform. It provides a human-readable representation of the current state of a specific resource, including all its attributes and configuration.
+
+### 2.1.1 用法
+
+terraform state show [options] ADDRESS
+
+该命令需要指定一个资源地址。
+
+该命令支持以下可选参数：
+- -state=path：指向状态文件的路径。默认情况下使用"terraform.tfstate"。如果启用了远程Backend则该参数设置无效
+
+terraform state show 的输出被设计成人类可读而非机器可读。如果想要从输出中提取数据，请使用 terraform show -json
+
+### 2.1.2 展示单个资源
+
+```
+$ terraform state show 'packet_device.worker'
+# packet_device.worker:
+resource "packet_device" "worker" {
+    billing_cycle = "hourly"
+    created       = "2015-12-17T00:06:56Z"
+    facility      = "ewr1"
+    hostname      = "prod-xyz01"
+    id            = "6015bg2b-b8c4-4925-aad2-f0671d5d3b13"
+    locked        = false
+}
+```
+
+### 2.1.3 展示单个模块资源
+
+```
+$ terraform state show 'module.foo.packet_device.worker'
+```
+
+### 2.1.4 展示声明count资源中特定实例
+
+```
+$ terraform state show 'packet_device.worker[0]'
+```
+
+### 2.1.5 展示声明for_each资源中特定实例
+
+Linux, MacOS, and Unix：
+
+```
+$ terraform state show 'packet_device.worker["example"]'
+```
+
+PowerShell：
+
+```
+$ terraform state show 'packet_device.worker[\"example\"]'
+```
+
+Windows命令行：
+
+```
+$ terraform state show packet_device.worker[\"example\"]
+```
+
+
+
+# 3 terraform state list
 
 terraform state list命令可以列出状态文件中记录的资源对象。
 
-## 2.1 用法
+terraform state list : is used to list all resources that are currently being tracked in the Terraform state. It provides a list of resource addresses, which can be helpful to identify the names or identifiers of resources managed by Terraform.
+
+
+
+## 3.1 用法
 
 terraform state list [options] [address...]
 
@@ -50,7 +130,7 @@ terraform state list [options] [address...]
 - -state=path：指定使用的状态文件地址。默认为"terraform.tfstate"。使用远程Backend时该参数设置无效
 - -id=id：要显示的资源ID
 
-## 2.2 例子：所有资源
+## 3.2 例子：所有资源
 
 ```
 $ terraform state list
@@ -60,7 +140,7 @@ aws_instance.bar[1]
 module.elb.aws_elb.main
 ```
 
-## 2.3 例子：根据资源地址过滤
+## 3.3 例子：根据资源地址过滤
 
 ```
 $ terraform state list aws_instance.bar
@@ -68,14 +148,14 @@ aws_instance.bar[0]
 aws_instance.bar[1]
 ```
 
-## 2.4 例子：根据模块过滤
+## 3.4 例子：根据模块过滤
 
 ```
 $ terraform state list module.elb
 module.elb.aws_elb.main
 ```
 
-## 2.5 例子：根据ID过滤
+## 3.5 例子：根据ID过滤
 
 下面的例子显示了根据资源对象ID过滤资源：
 
@@ -86,14 +166,14 @@ module.elb.aws_security_group.sg
 
 
 
-# 3 terraform state mv
+# 4 terraform state mv
 
 terraform state mv命令可以在状态文件中移动资源。该命令可以移动单个资源对象、多实例资源对象中特定实例、整个模块以及其他对象。
 该命令也可以在不同的状态文件之间移动对象，以配合代码重构。
 
 The terraform state mv command changes which resource address in your configuration is associated with a particular real-world object. Use this to preserve an object when renaming a resource, or when moving a resource into or out of a child module.
 
-## 3.1 用法
+## 4.1 用法
 
 terraform state mv [options] SOURCE DESTINATION
 
@@ -112,7 +192,7 @@ terraform state mv [options] SOURCE DESTINATION
 - -state=path：源状态文件地址，默认为当前Backend或是"terraform.tfstate"
 - -state-out=path：目标状态文件地址。如果不指定则使用源状态文件。可以是一个已经存在的文件或新建一个文件
 
-## 3.2 例子：重命名一个资源
+## 4.2 例子：重命名一个资源
 
 ```
 $ terraform state mv 'packet_device.worker' 'packet_device.helper'
@@ -125,7 +205,7 @@ You have modified your Terraform configuration to fix a typo in the Terraform ID
 
 ![](images/Pasted%20image%2020240416193008.png)
 
-## 3.3 例子：将一个资源移动进一个模块
+## 4.3 例子：将一个资源移动进一个模块
 
 以下例子展示了将packet_device.worker资源移动进名为app的模块。如果模块目前不存在，则会创建模块。
 
@@ -133,25 +213,25 @@ You have modified your Terraform configuration to fix a typo in the Terraform ID
 $ terraform state mv 'packet_device.worker' 'module.app.packet_device.worker'
 ```
 
-## 3.4 例子：移动一个模块进入另一个模块
+## 4.4 例子：移动一个模块进入另一个模块
 
 ```
 $ terraform state mv 'module.app' 'module.parent.module.app'
 ```
 
-## 3.5 例子：移动一个模块到另一个状态文件
+## 4.5 例子：移动一个模块到另一个状态文件
 
 ```
 $ terraform state mv -state-out=other.tfstate 'module.app' 'module.app'
 ```
 
-## 3.6 移动一个带有count参数的资源
+## 4.6 移动一个带有count参数的资源
 
 ```
 $ terraform state mv 'packet_device.worker[0]' 'packet_device.helper[0]'
 ```
 
-## 3.7 移动一个带有for_each参数的资源
+## 4.7 移动一个带有for_each参数的资源
 
 Linux、MacOS以及Unix：
 
@@ -173,11 +253,11 @@ $ terraform state mv packet_device.worker[\"example123\"] packet_device.helper[\
 
 
 
-# 4 terraform state pull 从远程Backend中人工下载状态
+# 5 terraform state pull 从远程Backend中人工下载状态
 
 terraform state pull命令可以从远程Backend中人工下载状态并输出。该命令也可搭配本地状态文件使用。
 
-## 4.1 用法
+## 5.1 用法
 
 terraform state pull
 
@@ -185,11 +265,11 @@ terraform state pull
 由于状态文件使用JSON格式，该功能可以搭配例如jq这样的命令行工具使用，也可以用来人工修改状态文件。
 
 
-# 5 terraform state push 上传本地状态文件到远程Backend
+# 6 terraform state push 上传本地状态文件到远程Backend
 
 terraform push命令被用来手动上传本地状态文件到远程Backend。该命令也可以被用在当前使用的本地状态文件上。
 
-## 5.1 用法
+## 6.1 用法
 
 terraform state push [options] PATH
 
@@ -207,11 +287,11 @@ Terraform会进行一系列检查以防止你进行一些不安全的变更：
 这两种检查都可以通过添加-force参数禁用，但**不推荐这样做**。如果禁用安全检查直接推送，那么目标状态文件将被覆盖。
 
 
-# 6 terraform state replace-provider
+# 7 terraform state replace-provider
 
 terraform state replace-provider命令可以替换状态文件中资源对象所使用的Provider的源.
 
-## 6.1 用法
+## 7.1 用法
 
 terraform state replace-provider [options] FROM_PROVIDER_FQN TO_PROVIDER_FQN
 
@@ -226,13 +306,13 @@ terraform state replace-provider [options] FROM_PROVIDER_FQN TO_PROVIDER_FQN
 - -lock-timeout=0s：类似apply，不再赘述
 - -state=path：要读取的状态文件地址。默认为当前使用的Backend或是"terraform.tfstate"文件
 
-## 6.2 样例
+## 7.2 样例
 
 ```
 $ terraform state replace-provider hashicorp/aws registry.acme.corp/acme/aws
 ```
 
-# 7 terraform state rm 可以用来从状态文件中删除对象
+# 8 terraform state rm 可以用来从状态文件中删除对象
 
 terraform state rm命令可以用来从状态文件中删除对象。该命令可以删除单个资源、多实例资源中特定实例、整个模块以及等等。
 
@@ -240,7 +320,7 @@ terraform state rm命令可以用来从状态文件中删除对象。该命令�
 
 "You can use terraform state rm in the less common situation where you wish to remove a binding to an existing remote object without first destroying it, which will effectively make Terraform "forget" the object while it continues to exist in the remote system."
 
-## 7.1 用法
+## 8.1 用法
 
 terraform state rm [options] ADDRESS...
 
@@ -260,31 +340,31 @@ terraform state rm [options] ADDRESS...
 - -backup=path：写入备份文件的路径
 - -state=path：要操作的资源文件路径。如果没有该参数，则会使用当前Backend或是"terraform.tfstate"文件
 
-### 7.1.1 删除一个资源
+### 8.1.1 删除一个资源
 
 ```
 $ terraform state rm 'packet_device.worker'
 ```
 
-### 7.1.2 删除一个模块
+### 8.1.2 删除一个模块
 
 ```
 $ terraform state rm 'module.foo'
 ```
 
-### 7.1.3 删除一个模块内资源
+### 8.1.3 删除一个模块内资源
 
 ```
 $ terraform state rm 'module.foo.packet_device.worker'
 ```
 
-### 7.1.4 删除一个声明count的资源
+### 8.1.4 删除一个声明count的资源
 
 ```
 $ terraform state rm 'packet_device.worker[0]'
 ```
 
-### 7.1.5 删除一个声明for_each的资源
+### 8.1.5 删除一个声明for_each的资源
 
 Linux, MacOS, and Unix：
 ```
@@ -301,67 +381,4 @@ Windows命令行：
 $ terraform state rm packet_device.worker[\"example\"]
 ```
 
-
-
-# 8 terraform state show_展示状态文件中单个资源的属性
-
-terraform state show命令可以展示状态文件中单个资源的属性。
-
-### 8.1.1 用法
-
-terraform state show [options] ADDRESS
-
-该命令需要指定一个资源地址。
-
-该命令支持以下可选参数：
-- -state=path：指向状态文件的路径。默认情况下使用"terraform.tfstate"。如果启用了远程Backend则该参数设置无效
-
-terraform state show 的输出被设计成人类可读而非机器可读。如果想要从输出中提取数据，请使用 terraform show -json
-
-### 8.1.2 展示单个资源
-
-```
-$ terraform state show 'packet_device.worker'
-# packet_device.worker:
-resource "packet_device" "worker" {
-    billing_cycle = "hourly"
-    created       = "2015-12-17T00:06:56Z"
-    facility      = "ewr1"
-    hostname      = "prod-xyz01"
-    id            = "6015bg2b-b8c4-4925-aad2-f0671d5d3b13"
-    locked        = false
-}
-```
-
-### 8.1.3 展示单个模块资源
-
-```
-$ terraform state show 'module.foo.packet_device.worker'
-```
-
-### 8.1.4 展示声明count资源中特定实例
-
-```
-$ terraform state show 'packet_device.worker[0]'
-```
-
-### 8.1.5 展示声明for_each资源中特定实例
-
-Linux, MacOS, and Unix：
-
-```
-$ terraform state show 'packet_device.worker["example"]'
-```
-
-PowerShell：
-
-```
-$ terraform state show 'packet_device.worker[\"example\"]'
-```
-
-Windows命令行：
-
-```
-$ terraform state show packet_device.worker[\"example\"]
-```
 

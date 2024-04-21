@@ -1,6 +1,4 @@
 
-
-
 # 1 总览 
 
 ## 1.1 variables inheritance

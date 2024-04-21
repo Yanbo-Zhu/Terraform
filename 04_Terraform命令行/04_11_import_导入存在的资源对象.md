@@ -83,6 +83,29 @@ $ terraform import aws_instance.baz[\"example\"] i-abcd1234
 ```
 
 
+---
+
+Matthew has written the configuration file of a manually created EC2 instance in Terraform. Following is the code:
+
+```
+1. resource "aws_instance" "myec2" {
+2. ami = "ami-bf5540df"
+3. instance_type = "t2.micro"
+4. vpc_security_group_ids = ["sg-6ae7d613", "sg-53370035"]
+5. key_name = "remotepractical"
+6. subnet_id = "subnet -9e3cfbc5"
+7.
+8. tags {
+9. Name = "manual"
+10. }
+
+```
+
+The instance id of that EC2 instance is “i-841886ebb7e9bd20” How he can import data of EC2 to state file?
+
+```
+terraform import aws_instance.myec2 i-041886ebb7e9bd20
+```
 # 2 terraform import  只输入state
 
 terraform import  只输入state, 还需要自己 手写 resource configuration block 

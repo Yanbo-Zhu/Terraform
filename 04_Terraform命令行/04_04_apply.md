@@ -29,6 +29,8 @@ terraform apply [options] [dir-or-plan]
     - terraform apply -var "instance_name=YetAnotherName"
 - -var-file=foo：指定一个输入变量文件。具体内容我们在介绍输入变量的章节已有介绍，在此不再赘述
 - -destroy: 只破坏 不重建 
+- -replace: 
+    - You want to force Terraform to destroy and recreate a resource on the next apply
 
 
 plan v reads the current state of any already-existing remote objects to MAKE SURE that the Terraform state is up-to-date.
@@ -88,7 +90,6 @@ D. Terraform will recreate the VM
 When you delete a resource like a VM directly through the cloud provider's console (outside of Terraform), the Terraform state file still believes the resource exists, as it's unaware of any changes made outside its management. The next time you run terraform apply, Terraform compares the desired state (defined in your Terraform configuration) with the actual state (as recorded in the state file and observed in the cloud environment).
 
 Since the actual VM no longer exists but your Terraform configuration still defines it, Terraform detects this discrepancy and takes action to reconcile the difference by creating a new VM to match the desired state defined in your Terraform configuration. Terraform's goal is always to make the real-world infrastructure match the configuration.
-
 
 - It refresh the state, which detects that the storage account was gone
 - Then it re-creates storage account with the same name but without the data from previous instance
