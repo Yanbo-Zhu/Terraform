@@ -1,8 +1,11 @@
 
 sentinel 哨兵
 
+Sentinel is only available on Cloud Team & Governance, Cloud Business, and Enterprise. It is not available for Cloud Free.
+
 # 1 Sentinel policy
 
+Sentinel is an embedded policy-as-code framework integrated with the HashiCorp Enterprise products. It enables fine-grained, logic-based policy decisions, and can be extended to use information from external sources.
 
 Your risk management organization requires that new AWS S3 buckets must be private and encrypted at rest. How can Terraform Enterprise automatically and proactively enforce this security control?
 A. With a Sentinel policy, which runs before every apply.
@@ -41,4 +44,15 @@ violations are detected, the plan is rejected, and the changes are not applied.
 Sentinel does not enforce policy logic before the plan phase or after the apply phase. However, Sentinel policies can also be used to enforce
 compliance on policy requirements that are not directly related to infrastructure changes, such as resource tagging or naming conventions. In thes cases, Sentinel policies may be evaluated at other points in the Terraform Enterprise workflow, such as during VCS (version control system)
 integration or during cost estimation.
+ 
+# 2 benefits of using Sentinel with Terraform Cloud/ Terraform Enterprise? 
 
+选 abc 
+A. Policy-as-code can enforce security best practices
+B. You can restrict specific configurations on resources like "CIDR=O.O.O.O/O" not allowed
+C. You can enforce a list of approved AWS AMIS
+D. Sentinel Policies can be written in HashiCorp Configuration Language (HCL)
+E. You can check out and check in cloud access keys
+
+
+D. Sentinel Policies can be written in HashiCorp Configuration Language (HCL): Sentinel can be written in many languages but preferably domain-specific language (DSL) not HCL.

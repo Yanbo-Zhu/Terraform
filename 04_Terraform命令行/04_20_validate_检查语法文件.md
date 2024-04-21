@@ -1,7 +1,16 @@
 
 # 1 validate
 
+==You must initialize your working directory before running terraform validate.==
+
+==checks that your configuration syntax is correct.==
+
+
+==The terraform validate command validates the configuration files in a directory, referring only to the configuration and NOT accessing any remote services such as remote state, provider APIs, etc. terraform validate does not uses provider APIs to verify your infrastructure settings.==
+
 The terraform validate command checks the syntax and validates the configuration files in a Terraform module. It does not check for configuration consistency errors like differences between local and remote state or outdated module versions.
+
+Before running the terraform validate command, it is recommended to initialize your working directory using the terraform init command. The Terraform init command initializes the working directory and downloads the necessary providers and modules specified in your Terraform configuration. After initialization, you can use Terraform validate to check the syntax and validity of your Terraform files.
 
 terraform validate命令可以检查目录下Terraform代码，只检查语法文件，不会访问诸如远程Backend、Provider的API等远程资源。
 

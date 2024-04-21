@@ -89,7 +89,7 @@ Terrafom引擎永远不会主动删除缓存文件夹中的插件，缓存文件
 registry.terraform.io不但可以查询Provider，也可以用来发布Provider；并且它也可以用来查询和发布模块(Module)，不过模块将是我们后续篇章讨论的话题。
 
 
-# 3 Provider的声明
+# 3 Provider的声明 required_providers
 
 The `provider` block configures the specified provider, in this case `aws`. A provider is a plugin that Terraform uses to create and manage your resources.
 
@@ -149,6 +149,19 @@ terraform {
     }
 }    
 ```
+
+
+---
+For production use, you should constrain the acceptable provider versions via configuration file to ensure that new versions with breaking changes will not be automatically installed by terraform init in the future. When terraform init is run without provider version constraints, it prints a suggested version constraint string for each provider.
+
+```
+terraform {
+    required_providers {
+        aws = ">= 2.7.0"
+    }
+}
+```
+
 
 
 # 4 内建Provider
@@ -255,8 +268,32 @@ data "ucloud_images" "default" {
 假如代码中所有显式声明的provider都有别名，那么Terraform运行时会构造一个所有配置均为空值的默认provider。假如provider有必填字段，并且又有资源使用了默认provider，那么Terraform会抛出一个错误，抱怨默认provider缺失了必填字段。
 
 
+
+## 5.1 alias 的使用_for_same_provider 
+
+
+An alias meta-arguement is used when using the same provider with different configurations for different resources.
+
+
+```
+1. provider "aws" {
+2. region = "us-east-1"
+3. }
+4. 
+5. provider "aws" {
+6. region = "us-west-1"
+7. } 
+
+
+A default provider configuration for "aws" was already given at
+main.tf:1,1-15. If multiple configurations are required, set the "______" argument for alternative configurations.
+```
+
+
 # 6 Version
 
+
+## 6.1 version value 的给入 
 
 You need to constrain the GitHub provider to version 2.1 or greater.
 
@@ -298,5 +335,11 @@ module "consul" {
     servers = 3
 }
 ```
+
+
+
+## 6.2 version可能出现的问题
+
+Providers are plugins released on a separate rhythm from Terraform itself, and so they have their own version numbers. For production use, you should constrain the acceptable provider version via configuration. This helps to ensure that new versions with potentially breaking changes will not be automatically installed by terraform init in the future.
 
 
