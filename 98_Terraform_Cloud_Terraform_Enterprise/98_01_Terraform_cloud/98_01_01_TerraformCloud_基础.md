@@ -25,13 +25,13 @@ Whether to perform speculative plans on pull requests to the connected repositor
 # 3 Terraform Cloud's features and free tirer
 
 Terraform Cloud's free tier
-A. Workspace and workspace management 
-B. Remote state management
+A. Workspace management 
+B. Remote state management and storage
 D. Private module registry
 VCS Integration
 They can securely store cloud credentials
 A web-based user interface
-Remote state storage
+
 
 不是免费的, 但是可以用 feature is not included in Terraform Cloud's free tier?
 C. Audit logging
