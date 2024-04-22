@@ -16,6 +16,7 @@ terraform/workspace
 terraform.d
 terraform.d
 terraform.tfstate.d
+
 Correct: terraform.tfstate.d
 
 
