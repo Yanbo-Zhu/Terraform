@@ -17,3 +17,6 @@ terraform force-unlock LOCK_ID [DIR]
 
 一般情况下我们不需要强制解锁，只有在Terraform异常终止，来不及解除锁时需要我们手动强制解除锁。错误地解除状态锁可能会导致状态混乱，所以请小心使用。
 
+
+Das ist ein Schutzmechanismus, falls zwei parallel an diesem TF-Projekt arbeiten und einer mitten im apply steckt. 
+Aber der Lock bleibt, wenn TF mal ungünstig abbricht.
